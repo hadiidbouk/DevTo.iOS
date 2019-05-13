@@ -1,5 +1,7 @@
 # DevTo (under Development 🔧)
 
+[![Build Status](https://travis-ci.com/hadiidbouk/DevTo.iOS.svg?branch=dev)](https://travis-ci.com/hadiidbouk/DevTo.iOS)
+
 DevTo is an unofficial iOS app for [Dev.to](https://dev.to) website
 
 ## 🧐 Why am I building this?
