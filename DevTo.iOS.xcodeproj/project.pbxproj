@@ -13,6 +13,10 @@
 		3137674F228AA4EF00F46C7A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3137674E228AA4EF00F46C7A /* Coordinator.swift */; };
 		31376751228AA52100F46C7A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31376750228AA52100F46C7A /* AppCoordinator.swift */; };
 		31376753228AA86600F46C7A /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31376752228AA86600F46C7A /* FeedCoordinator.swift */; };
+		31376758228AABB500F46C7A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31376757228AABB500F46C7A /* UIView+Extensions.swift */; };
+		3137675B228AABFF00F46C7A /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3137675A228AABFF00F46C7A /* Apply.swift */; };
+		3137675D228AAC1900F46C7A /* Reflection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3137675C228AAC1900F46C7A /* Reflection.swift */; };
+		3137675F228AAC6200F46C7A /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3137675E228AAC6200F46C7A /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3137674E228AA4EF00F46C7A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		31376750228AA52100F46C7A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		31376752228AA86600F46C7A /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
+		31376757228AABB500F46C7A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		3137675A228AABFF00F46C7A /* Apply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apply.swift; sourceTree = "<group>"; };
+		3137675C228AAC1900F46C7A /* Reflection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reflection.swift; sourceTree = "<group>"; };
+		3137675E228AAC6200F46C7A /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		BB1D32F40475879B2FA7E572 /* Pods-DevTo.iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTo.iOS.release.xcconfig"; path = "Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C2BB02589E061581FDBF5C06 /* Pods-DevTo.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTo.iOS.debug.xcconfig"; path = "Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +71,7 @@
 				31376748228AA3B200F46C7A /* Application */,
 				31376746228AA30E00F46C7A /* Scenarios */,
 				31376749228AA3BB00F46C7A /* Resources */,
+				31376754228AAB4600F46C7A /* Misc */,
 			);
 			path = DevTo.iOS;
 			sourceTree = "<group>";
@@ -117,6 +126,33 @@
 				3137674E228AA4EF00F46C7A /* Coordinator.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		31376754228AAB4600F46C7A /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				31376759228AABE900F46C7A /* Tools */,
+				31376755228AAB5500F46C7A /* Extensions */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		31376755228AAB5500F46C7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31376757228AABB500F46C7A /* UIView+Extensions.swift */,
+				3137675E228AAC6200F46C7A /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		31376759228AABE900F46C7A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3137675A228AABFF00F46C7A /* Apply.swift */,
+				3137675C228AAC1900F46C7A /* Reflection.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		84F2C6A752B3669B808E4D9B /* Pods */ = {
@@ -230,10 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31376758228AABB500F46C7A /* UIView+Extensions.swift in Sources */,
 				31376753228AA86600F46C7A /* FeedCoordinator.swift in Sources */,
+				3137675F228AAC6200F46C7A /* UIViewController+Extensions.swift in Sources */,
+				3137675B228AABFF00F46C7A /* Apply.swift in Sources */,
 				31376751228AA52100F46C7A /* AppCoordinator.swift in Sources */,
 				3137674C228AA40F00F46C7A /* FeedViewController.swift in Sources */,
 				31376733228985C100F46C7A /* AppDelegate.swift in Sources */,
+				3137675D228AAC1900F46C7A /* Reflection.swift in Sources */,
 				3137674F228AA4EF00F46C7A /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

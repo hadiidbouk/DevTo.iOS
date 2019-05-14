@@ -7,6 +7,9 @@
 //
 
 import UIKit
+
+extension UIView : Reflection { }
+
 //MARK: - Constaints
 extension UIView {
     
