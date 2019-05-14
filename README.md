@@ -11,6 +11,7 @@ DevTo is an unofficial iOS app for [Dev.to](https://dev.to) website
 1. MVVM + Coordinator.
 1. Exploring Dev.to and its API
 1. Dependency injection ([Swinject](https://github.com/Swinject/Swinject))
+1. Just Code - No Storyboards 🤓
 
 ## 👏🏻 Contributing 👏🏻
 
