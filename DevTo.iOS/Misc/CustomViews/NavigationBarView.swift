@@ -47,6 +47,8 @@ extension NavigationBarView {
 
         setupDevImageView()
         setupSearchBar()
+        setupNavigationImageView()
+        setupConnectAndNotificationStackView()
     }
     
     private func setupDevImageView() {
@@ -57,9 +59,9 @@ extension NavigationBarView {
         addSubview(devImageView)
         devImageView.apply {
             $0.leadingConstraint(constant: 10)
-            $0.topConstraint(constant: UIScreen.topSafeArea + 8)
-            $0.heightConstraint(constant: 30)
-            $0.widthConstraint(constant: 40)
+            $0.topConstraint(constant: UIScreen.topSafeArea + 4)
+            $0.heightConstraint(constant: 40)
+            $0.widthConstraint(constant: 50)
         }
     }
     
@@ -76,14 +78,80 @@ extension NavigationBarView {
             textfield.placeholder = "search"
             textfield.roundedCorners(radius: 10)
             textfield.font = textfield.font?.withSize(13)
+            textfield.leftView = nil
         }
         
         addSubview(searchBar)
         searchBar.apply {
-            $0.leadingConstraint(onTrailingOf: devImageView, constant: 8)
+            $0.leadingConstraint(onTrailingOf: devImageView, constant: 5)
             $0.topConstraint(constant: UIScreen.topSafeArea + 8)
             $0.heightConstraint(constant: 30)
-            $0.widthConstraint(constant: 210)
+            $0.widthConstraint(constant: UIScreen.main.bounds.width / 2)
         }
+    }
+    
+    private func setupNavigationImageView() {
+        navigationImageView = UIImageView()
+        navigationImageView.contentMode = .scaleAspectFit
+        navigationImageView.image = #imageLiteral(resourceName: "menu")
+        
+        addSubview(navigationImageView)
+        navigationImageView.apply {
+            $0.trailingConstaint(constant: -10)
+            $0.heightConstraint(constant: 25)
+            $0.widthConstraint(constant: 25)
+            $0.centerVertical(dependingOn: searchBar)
+        }
+    }
+    
+    private func setupConnectAndNotificationStackView() {
+        
+        let stackView = UIStackView()
+        stackView.axis = .horizontal
+        stackView.distribution = .fillEqually
+        
+        //Connect Image
+        let connectImageViewContainer = UIView()
+        connectImageView = UIImageView()
+        connectImageView.contentMode = .scaleAspectFit
+        connectImageView.image = #imageLiteral(resourceName: "connect")
+        
+        connectImageViewContainer.addSubview(connectImageView)
+        connectImageView.apply {
+            $0.heightConstraint(constant: 30)
+            $0.widthConstraint(constant: 30)
+            $0.centerToParentVertical()
+            $0.centerToParentHorizontal()
+        }
+        
+        stackView.addArrangedSubview(connectImageViewContainer)
+
+        //notification Image
+        let notificationImageViewContainer = UIView()
+        notificationImageView = UIImageView()
+        notificationImageView.contentMode = .scaleAspectFit
+        notificationImageView.image = #imageLiteral(resourceName: "notification")
+        
+        notificationImageViewContainer.addSubview(notificationImageView)
+        notificationImageView.apply {
+            $0.heightConstraint(constant: 25)
+            $0.widthConstraint(constant: 25)
+            $0.centerToParentVertical()
+            $0.centerToParentHorizontal()
+        }
+        
+        stackView.addArrangedSubview(notificationImageViewContainer)
+        
+        //stack view constraints
+        addSubview(stackView)
+        stackView.apply {
+            $0.leadingConstraint(onTrailingOf: searchBarTextField, constant: 5)
+            $0.trailingConstaint(onLeadingOf: navigationImageView, constant: -10)
+            $0.centerVertical(dependingOn: searchBar)
+        }
+    }
+    
+    private func setupNotificationImageView() {
+        
     }
 }
