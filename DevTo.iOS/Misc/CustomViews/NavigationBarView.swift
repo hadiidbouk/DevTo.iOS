@@ -7,20 +7,31 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class NavigationBarView : UIView {
     
-    var devImageView: UIImageView!
-    var searchBar: UISearchBar!
-    var searchBarTextField: UITextField!
-    var connectImageView: UIImageView!
-    var notificationImageView: UIImageView!
-    var navigationImageView: UIImageView!
+    //UI
+    private var devImageView: UIImageView!
+    private var searchBar: UISearchBar!
+    private var searchBarTextField: UITextField!
+    private var connectImageView: UIImageView!
+    private var notificationImageView: UIImageView!
+    private var navigationImageView: UIImageView!
+    
+    private let disposeBag = DisposeBag()
+    
+    var navigationTapGesture: UITapGestureRecognizer!
+    var notificationTapGesture: UITapGestureRecognizer!
+    var connectTapGesture: UITapGestureRecognizer!
+    var devTapGesture: UITapGestureRecognizer!
     
     init() {
         super.init(frame: .zero)
         
         setupUI()
+        setupTapGestures()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -39,6 +50,7 @@ class NavigationBarView : UIView {
     }
 }
 
+//MARK: - UI
 extension NavigationBarView {
     
     private func setupUI() {
@@ -109,38 +121,21 @@ extension NavigationBarView {
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.distribution = .fillEqually
+        stackView.isUserInteractionEnabled = true
         
         //Connect Image
-        let connectImageViewContainer = UIView()
         connectImageView = UIImageView()
         connectImageView.contentMode = .scaleAspectFit
         connectImageView.image = #imageLiteral(resourceName: "connect")
         
-        connectImageViewContainer.addSubview(connectImageView)
-        connectImageView.apply {
-            $0.heightConstraint(constant: 30)
-            $0.widthConstraint(constant: 30)
-            $0.centerToParentVertical()
-            $0.centerToParentHorizontal()
-        }
-        
-        stackView.addArrangedSubview(connectImageViewContainer)
+        stackView.addArrangedSubview(connectImageView)
 
         //notification Image
-        let notificationImageViewContainer = UIView()
         notificationImageView = UIImageView()
         notificationImageView.contentMode = .scaleAspectFit
         notificationImageView.image = #imageLiteral(resourceName: "notification")
         
-        notificationImageViewContainer.addSubview(notificationImageView)
-        notificationImageView.apply {
-            $0.heightConstraint(constant: 25)
-            $0.widthConstraint(constant: 25)
-            $0.centerToParentVertical()
-            $0.centerToParentHorizontal()
-        }
-        
-        stackView.addArrangedSubview(notificationImageViewContainer)
+        stackView.addArrangedSubview(notificationImageView)
         
         //stack view constraints
         addSubview(stackView)
@@ -150,8 +145,67 @@ extension NavigationBarView {
             $0.centerVertical(dependingOn: searchBar)
         }
     }
+}
+
+//MARK: - Tap Gestures
+extension NavigationBarView {
     
-    private func setupNotificationImageView() {
+    private func setupTapGestures() {
+        setNavigationTapGesture()
+        setNotificationTapGesture()
+        setConnectTapGesture()
+        setDevTapGesture()
+    }
+    
+    private func setNavigationTapGesture() {
+        navigationTapGesture = UITapGestureRecognizer()
+        navigationImageView.addGestureRecognizer(navigationTapGesture)
+        navigationImageView.isUserInteractionEnabled = true
         
+        navigationTapGesture.rx.event.bind(onNext: { [weak self] recognizer in
+            self?.navigationImageView.alpha = 0.75
+            UIView.animate(withDuration: 0.5) {
+                self?.navigationImageView.alpha = 1.0
+            }
+        }).disposed(by: disposeBag)
+    }
+    
+    private func setNotificationTapGesture() {
+        notificationTapGesture = UITapGestureRecognizer()
+        notificationImageView.addGestureRecognizer(notificationTapGesture)
+        notificationImageView.isUserInteractionEnabled = true
+        
+        notificationTapGesture.rx.event.bind(onNext: { [weak self] recognizer in
+            self?.notificationImageView.alpha = 0.75
+            UIView.animate(withDuration: 0.5) {
+                self?.notificationImageView.alpha = 1.0
+            }
+        }).disposed(by: disposeBag)
+    }
+    
+    private func setConnectTapGesture() {
+        connectTapGesture = UITapGestureRecognizer()
+        connectImageView.addGestureRecognizer(connectTapGesture)
+        connectImageView.isUserInteractionEnabled = true
+        
+        connectTapGesture.rx.event.bind(onNext: { [weak self] recognizer in
+            self?.connectImageView.alpha = 0.75
+            UIView.animate(withDuration: 0.5) {
+                self?.connectImageView.alpha = 1.0
+            }
+        }).disposed(by: disposeBag)
+    }
+    
+    private func setDevTapGesture() {
+        devTapGesture = UITapGestureRecognizer()
+        devImageView.addGestureRecognizer(devTapGesture)
+        devImageView.isUserInteractionEnabled = true
+        
+        devTapGesture.rx.event.bind(onNext: { [weak self] recognizer in
+            self?.devImageView.alpha = 0.75
+            UIView.animate(withDuration: 0.5) {
+                self?.devImageView.alpha = 1.0
+            }
+        }).disposed(by: disposeBag)
     }
 }
