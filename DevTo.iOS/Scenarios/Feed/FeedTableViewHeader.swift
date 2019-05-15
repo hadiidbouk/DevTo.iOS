@@ -7,14 +7,26 @@
 //
 
 import UIKit
+import RxCocoa
+import RxSwift
 
 class FeedTableViewHeader : UIView {
+    
+    //UI
+    var leftImageViewContainer: UIView!
+    var rightImageViewContainer: UIView!
+
+    private let disposeBag = DisposeBag()
+
+    var leftImageTapGesture: UITapGestureRecognizer!
+    var rightImageTapGesture: UITapGestureRecognizer!
     
     init() {
         
         super.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 60))
         
         setupUI()
+        setupTapGestures()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -36,7 +48,7 @@ extension FeedTableViewHeader {
     
     private func setupLeftImageView() {
         
-        let leftImageViewContainer = UIView()
+        leftImageViewContainer = UIView()
         let leftImageView = UIImageView()
         leftImageView.contentMode = .scaleAspectFit
         leftImageView.image = #imageLiteral(resourceName: "nav-button-left")
@@ -60,7 +72,7 @@ extension FeedTableViewHeader {
     
     private func setupRightImageView() {
         
-        let rightImageViewContainer = UIView()
+        rightImageViewContainer = UIView()
         let rightImageView = UIImageView()
         rightImageView.contentMode = .scaleAspectFit
         rightImageView.image = #imageLiteral(resourceName: "nav-button-right")
@@ -94,5 +106,38 @@ extension FeedTableViewHeader {
             $0.topConstraint(constant: 0)
             $0.bottomConstraint(constant: 0)
         }
+    }
+}
+
+//MARK: - Tap Gestures
+extension FeedTableViewHeader {
+    
+    private func setupTapGestures() {
+        setupLeftImageGesture()
+        setupRightImageGesture()
+    }
+    
+    private func setupLeftImageGesture() {
+        leftImageTapGesture = UITapGestureRecognizer()
+        leftImageViewContainer.addGestureRecognizer(leftImageTapGesture)
+        
+        leftImageTapGesture.rx.event.bind(onNext: { [weak self] recognizer in
+            self?.leftImageViewContainer.alpha = 0.75
+            UIView.animate(withDuration: 0.5) {
+                self?.leftImageViewContainer.alpha = 1.0
+            }
+        }).disposed(by: disposeBag)
+    }
+    
+    private func setupRightImageGesture() {
+        rightImageTapGesture = UITapGestureRecognizer()
+        rightImageViewContainer.addGestureRecognizer(rightImageTapGesture)
+        
+        rightImageTapGesture.rx.event.bind(onNext: { [weak self] recognizer in
+            self?.rightImageViewContainer.alpha = 0.75
+            UIView.animate(withDuration: 0.5) {
+                self?.rightImageViewContainer.alpha = 1.0
+            }
+        }).disposed(by: disposeBag)
     }
 }
