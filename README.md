@@ -1,4 +1,4 @@
-# DevTo (under Development 🔧)
+# DevTo (Under Development 🔧)
 
 [![Build Status](https://travis-ci.com/hadiidbouk/DevTo.iOS.svg?branch=dev)](https://travis-ci.com/hadiidbouk/DevTo.iOS)
 
