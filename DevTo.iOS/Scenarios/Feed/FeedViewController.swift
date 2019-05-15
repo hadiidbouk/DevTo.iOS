@@ -10,8 +10,10 @@ import UIKit
 
 class FeedViewController: UIViewController {
 
+    //UI
+    var navigationBarView: NavigationBarView!
+    
     init() {
-        
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -21,7 +23,21 @@ class FeedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setupUI()
+    }
+}
+
+//MARK: - UI
+extension FeedViewController {
+    
+    private func setupUI() {
         
-        view.backgroundColor = .yellow
+        setupNavigationBarView()
+    }
+    
+    private func setupNavigationBarView() {
+        navigationBarView = NavigationBarView()
+        navigationBarView.setToTop(view: view)
     }
 }

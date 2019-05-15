@@ -18,8 +18,7 @@ class AppCoordinator : Coordinator {
         
         self.window = window
         rootViewController = UINavigationController()
-        rootViewController.navigationBar.prefersLargeTitles = true
-        
+        rootViewController.setNavigationBarHidden(true, animated: false)
         feedCoordinator = FeedCoordinator(presenter: rootViewController)
     }
     
