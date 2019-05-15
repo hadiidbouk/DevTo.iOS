@@ -1,6 +1,7 @@
 # DevTo (Under Development 🔧)
 
 [![Build Status](https://travis-ci.com/hadiidbouk/DevTo.iOS.svg?branch=dev)](https://travis-ci.com/hadiidbouk/DevTo.iOS)
+<img src="https://img.shields.io/badge/Swift-5.0-orange.svg" />
 
 DevTo is an unofficial iOS app for [Dev.to](https://dev.to) website
 
