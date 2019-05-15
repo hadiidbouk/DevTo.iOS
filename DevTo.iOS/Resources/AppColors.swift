@@ -14,6 +14,10 @@ struct AppColors {
         return UIColor(hex: "#fdf9f3") ?? .clear
     }()
     
+    static var navigationBarShadowColor: UIColor = {
+        return UIColor(hex: "#595959") ?? .clear
+    }()
+    
     static var searchBarBackground: UIColor = {
         return UIColor(hex: "#e8e7e7") ?? .clear
     }()
