@@ -12,6 +12,7 @@ class NavigationBarView : UIView {
     
     var devImageView: UIImageView!
     var searchBar: UISearchBar!
+    var searchBarTextField: UITextField!
     
     init() {
         super.init(frame: .zero)
@@ -36,6 +37,8 @@ class NavigationBarView : UIView {
         
         if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
             
+            searchBarTextField = textfield
+            
             textfield.backgroundColor = AppColors.searchBarBackground
             textfield.attributedPlaceholder = NSAttributedString(string: textfield.placeholder ?? "", attributes: [NSAttributedString.Key.foregroundColor : UIColor.white])
             textfield.placeholder = "search"
@@ -45,7 +48,7 @@ class NavigationBarView : UIView {
         
         addSubview(searchBar)
         searchBar.apply {
-            $0.leadingConstraint(onTrailingOf: devImageView, constant: 10)
+            $0.leadingConstraint(onTrailingOf: devImageView, constant: 8)
             $0.centerToParentVertical()
             $0.heightConstraint(constant: 30)
             $0.widthConstraint(constant: 240)
