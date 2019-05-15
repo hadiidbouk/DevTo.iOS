@@ -91,6 +91,7 @@ extension NavigationBarView {
             textfield.roundedCorners(radius: 10)
             textfield.font = textfield.font?.withSize(13)
             textfield.leftView = nil
+            textfield.tintColor = .darkGray
         }
         
         addSubview(searchBar)
