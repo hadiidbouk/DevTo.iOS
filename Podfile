@@ -6,5 +6,6 @@ target 'DevTo.iOS' do
   use_frameworks!
 
   # Pods for DevTo.iOS
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
 end

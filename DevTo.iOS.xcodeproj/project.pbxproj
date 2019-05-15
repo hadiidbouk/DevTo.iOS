@@ -21,9 +21,11 @@
 		3137676A228AE14A00F46C7A /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31376769228AE14A00F46C7A /* NavigationBarView.swift */; };
 		3137676C228AE79800F46C7A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3137676B228AE79800F46C7A /* UIColor+Extensions.swift */; };
 		3137676E228AE7BD00F46C7A /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3137676D228AE7BD00F46C7A /* AppColors.swift */; };
+		BDD7229EEA05E3D6A5A0CB5C /* Pods_DevTo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2598C52E35F7B759959CED35 /* Pods_DevTo_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2598C52E35F7B759959CED35 /* Pods_DevTo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DevTo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3137672F228985C100F46C7A /* DevTo.iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevTo.iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31376732228985C100F46C7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31376739228985C200F46C7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD7229EEA05E3D6A5A0CB5C /* Pods_DevTo_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +190,7 @@
 		ABB2AF9BBCD0AEF9124D6924 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2598C52E35F7B759959CED35 /* Pods_DevTo_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,6 +206,7 @@
 				3137672B228985C100F46C7A /* Sources */,
 				3137672C228985C100F46C7A /* Frameworks */,
 				3137672D228985C100F46C7A /* Resources */,
+				6A33E2738E8C244DC3DC91A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +262,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6A33E2738E8C244DC3DC91A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C141AE9143934A82D67769DA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
