@@ -36,31 +36,49 @@ extension FeedTableViewHeader {
     
     private func setupLeftImageView() {
         
+        let leftImageViewContainer = UIView()
         let leftImageView = UIImageView()
         leftImageView.contentMode = .scaleAspectFit
         leftImageView.image = #imageLiteral(resourceName: "nav-button-left")
         
-        addSubview(leftImageView)
+        leftImageViewContainer.addSubview(leftImageView)
         leftImageView.apply {
             $0.topConstraint(constant: 15)
             $0.leadingConstraint(constant: 20)
             $0.widthConstraint(constant: 25)
             $0.heightConstraint(constant: 25)
         }
+        
+        addSubview(leftImageViewContainer)
+        leftImageViewContainer.apply {
+            $0.topConstraint(constant: 0)
+            $0.leadingConstraint(constant: 0)
+            $0.widthConstraint(constant: 65)
+            $0.bottomConstraint(constant: 0)
+        }
     }
     
     private func setupRightImageView() {
         
+        let rightImageViewContainer = UIView()
         let rightImageView = UIImageView()
         rightImageView.contentMode = .scaleAspectFit
         rightImageView.image = #imageLiteral(resourceName: "nav-button-right")
         
-        addSubview(rightImageView)
+        rightImageViewContainer.addSubview(rightImageView)
         rightImageView.apply {
             $0.topConstraint(constant: 15)
             $0.trailingConstaint(constant: -20)
             $0.widthConstraint(constant: 25)
             $0.heightConstraint(constant: 25)
+        }
+        
+        addSubview(rightImageViewContainer)
+        rightImageViewContainer.apply {
+            $0.topConstraint(constant: 0)
+            $0.trailingConstaint(constant: 0)
+            $0.widthConstraint(constant: 65)
+            $0.bottomConstraint(constant: 0)
         }
     }
     
