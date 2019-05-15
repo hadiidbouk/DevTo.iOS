@@ -12,6 +12,8 @@ class FeedViewController: UIViewController {
 
     //UI
     var navigationBarView: NavigationBarView!
+    var feedTableView: UITableView!
+    var feedTableViewHeader: FeedTableViewHeader!
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -34,10 +36,28 @@ extension FeedViewController {
     private func setupUI() {
         
         setupNavigationBarView()
+        setupFeedTableView()
     }
     
     private func setupNavigationBarView() {
         navigationBarView = NavigationBarView()
         navigationBarView.setToTop(view: view)
+    }
+    
+    private func setupFeedTableView() {
+        feedTableView = UITableView()
+        feedTableView.separatorStyle = .none
+        feedTableView.tableFooterView = UIView()
+        
+        let feedTableViewHeader = FeedTableViewHeader()
+        feedTableView.tableHeaderView = feedTableViewHeader
+        
+        view.addSubview(feedTableView)
+        feedTableView.apply {
+            $0.topConstraint(onBottomOf: navigationBarView, constant: 1)
+            $0.leadingConstraint(constant: 0)
+            $0.trailingConstaint(constant: 0)
+            $0.bottomConstraint(constant: 0)
+        }
     }
 }
