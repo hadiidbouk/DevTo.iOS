@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum FeedType : String {
+enum FeedType : String, CaseIterable {
     
     case myDevFeed = "<MY DEV FEED>"
     case pastWeek = "<PAST WEEK>"

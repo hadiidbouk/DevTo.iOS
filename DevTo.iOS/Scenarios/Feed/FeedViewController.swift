@@ -7,13 +7,22 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class FeedViewController: UIViewController {
 
+    private let disposeBag = DisposeBag()
+
+    var currentFeedType: String = ""
+    
     //UI
     var navigationBarView: NavigationBarView!
     var feedTableView: UITableView!
     var feedTableViewHeader: FeedTableViewHeader!
+    var feedTypesAlertController: UIAlertController!
+    var feedTypeDoneBtn: UIButton!
+    var feedTypesPickerView: UIPickerView!
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -37,6 +46,8 @@ extension FeedViewController {
         
         setupNavigationBarView()
         setupFeedTableView()
+        setupFeedFilterPickerAlert()
+        setupViewActions()
     }
     
     private func setupNavigationBarView() {
@@ -49,7 +60,7 @@ extension FeedViewController {
         feedTableView.separatorStyle = .none
         feedTableView.tableFooterView = UIView()
         
-        let feedTableViewHeader = FeedTableViewHeader()
+        feedTableViewHeader = FeedTableViewHeader()
         feedTableView.tableHeaderView = feedTableViewHeader
         
         view.addSubview(feedTableView)
@@ -59,5 +70,74 @@ extension FeedViewController {
             $0.trailingConstaint(constant: 0)
             $0.bottomConstraint(constant: 0)
         }
+    }
+    
+    private func setupFeedFilterPickerAlert() {
+        
+        feedTypesAlertController = UIAlertController(title: "", message: "", preferredStyle: UIAlertController.Style.alert)
+        
+        feedTypesPickerView = UIPickerView()
+
+        var feedTypes = [String]()
+        FeedType.allCases.forEach {
+            feedTypes.append($0.rawValue)
+        }
+        
+        Observable.of(feedTypes)
+            .bind(to: feedTypesPickerView.rx.itemTitles) { _, item in
+                return "\(item)"
+            }
+            .disposed(by: disposeBag)
+        
+        feedTypesAlertController.view.addSubview(feedTypesPickerView)
+        feedTypesPickerView.apply {
+            $0.topConstraint(constant: 0)
+            $0.heightConstraint(constant: 150)
+            $0.widthConstraint(constant: 200)
+            $0.centerToParentHorizontal()
+        }
+
+        feedTypeDoneBtn = UIButton(type: .system)
+        feedTypeDoneBtn.setTitle("Done", for: .normal)
+        feedTypeDoneBtn.setTitleColor(.black, for: .normal)
+        
+        feedTypesAlertController.view.addSubview(feedTypeDoneBtn)
+        feedTypeDoneBtn.apply {
+            $0.topConstraint(onBottomOf: feedTypesPickerView, constant: 10)
+            $0.leadingConstraint(constant: 0)
+            $0.trailingConstaint(constant: 0)
+            $0.bottomConstraint(constant: -10)
+        }
+    }
+}
+
+//MARK: - Tap Gestures
+extension FeedViewController {
+    
+    private func setupViewActions() {
+        
+        setupFeedTypeTapGestures()
+        setupPickerViewItemChange()
+    }
+    
+    private func setupFeedTypeTapGestures() {
+        
+        feedTableViewHeader.feedTypeButton.rx.tap.bind(onNext: { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.present(strongSelf.feedTypesAlertController, animated: true, completion: nil)
+        }).disposed(by: disposeBag)
+        
+        feedTypeDoneBtn.rx.tap.bind(onNext: { [weak self] in
+            guard let strongSelf = self else { return }
+            strongSelf.feedTypesAlertController.dismiss(animated: true, completion: nil)
+            strongSelf.feedTableViewHeader.feedTypeButton.setTitle(strongSelf.currentFeedType, for: .normal)
+        }).disposed(by: disposeBag)
+    }
+    
+    private func setupPickerViewItemChange() {
+        feedTypesPickerView.rx.itemSelected.subscribe({ [weak self] (value) in
+            guard let rowIndex = value.element?.row else { return }
+            self?.currentFeedType = FeedType.allCases[rowIndex].rawValue
+        }).disposed(by: disposeBag)
     }
 }
