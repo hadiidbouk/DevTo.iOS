@@ -15,7 +15,8 @@ class FeedTableViewHeader : UIView {
     //UI
     var leftImageViewContainer: UIView!
     var rightImageViewContainer: UIView!
-
+    var feedTypeButton: UIButton!
+    
     private let disposeBag = DisposeBag()
 
     var leftImageTapGesture: UITapGestureRecognizer!
@@ -95,7 +96,7 @@ extension FeedTableViewHeader {
     }
     
     private func setupFeedFilterButton() {
-        let feedTypeButton = UIButton(type: .system)
+        feedTypeButton = UIButton(type: .system)
         feedTypeButton.setTitle(FeedType.myDevFeed.rawValue, for: .normal)
         feedTypeButton.setTitleColor(.black, for: .normal)
         feedTypeButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
