@@ -11,6 +11,8 @@ import UIKit
 class FeedTableViewCell: UITableViewCell {
 
     var rootStackView: UIStackView!
+    var titleLbl: UILabel!
+    var userImageView: UIImageView!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -45,16 +47,18 @@ extension FeedTableViewCell {
         }
         
         setImageAndTitleStackView()
+        setNameAndDateLabel()
     }
     
     private func setImageAndTitleStackView() {
+        
         let imageAndTitleStackView = UIStackView()
         imageAndTitleStackView.axis = .horizontal
         imageAndTitleStackView.distribution = .fill
         imageAndTitleStackView.alignment = .top
         imageAndTitleStackView.spacing = 10
         
-        let userImageView = UIImageView()
+        userImageView = UIImageView()
         userImageView.image = #imageLiteral(resourceName: "dev_icon")
         userImageView.roundedCorners(radius: 20)
         
@@ -64,7 +68,7 @@ extension FeedTableViewCell {
             $0.heightConstraint(constant: 40)
         }
         
-        let titleLbl = UILabel()
+        titleLbl = UILabel()
         titleLbl.text = "What do companies expect from Python devs in 2019?"
         titleLbl.font = UIFont.boldSystemFont(ofSize: 18)
         titleLbl.textAlignment = .left
@@ -72,7 +76,24 @@ extension FeedTableViewCell {
         
         imageAndTitleStackView.addArrangedSubview(titleLbl)
         
-        
         rootStackView.addArrangedSubview(imageAndTitleStackView)
+    }
+    
+    private func setNameAndDateLabel() {
+        
+        let nameAndDateContainer = UIView()
+        rootStackView.addArrangedSubview(nameAndDateContainer)
+
+        let nameAndDateLbl = UILabel()
+        nameAndDateLbl.text = "Andrew Stetsenko ・ Apr 23"
+        nameAndDateLbl.textColor = .lightGray
+        nameAndDateLbl.textAlignment = .left
+        nameAndDateLbl.font = nameAndDateLbl.font.withSize(14)
+        
+        nameAndDateContainer.addSubview(nameAndDateLbl)
+        nameAndDateLbl.apply {
+            $0.topConstraint(constant: 10)
+            $0.leadingConstraint(view: titleLbl, constant: 0)
+        }
     }
 }
