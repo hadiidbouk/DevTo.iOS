@@ -15,7 +15,6 @@ struct Article {
     let title: String
     let description: String
     let coverImageUrl: String?
-    let publishedAt: Date
     let tagList: [String]
     let slug: String
     let path: String
@@ -33,7 +32,6 @@ struct Article {
          title: String,
          description: String,
          coverImageUrl: String?,
-         publishedAt: Date,
          tagList: [String],
          slug: String,
          path: String,
@@ -51,7 +49,6 @@ struct Article {
         self.title = title
         self.description = description
         self.coverImageUrl = coverImageUrl
-        self.publishedAt = publishedAt
         self.tagList = tagList
         self.slug = slug
         self.path = path
@@ -75,7 +72,6 @@ extension Article : Decodable {
         case title = "title"
         case description = "description"
         case coverImageUrl = "cover_image"
-        case publishedAt = "published_at"
         case tagList = "tag_list"
         case slug = "slug"
         case path = "path"
@@ -96,7 +92,6 @@ extension Article : Decodable {
         let title = try? container.decode(String.self, forKey: .title)
         let description = try? container.decode(String.self, forKey: .description)
         let coverImageUrl = try? container.decode(String.self, forKey: .coverImageUrl)
-        let publishedAt = try? container.decode(Date.self, forKey: .publishedAt)
         let tagList = try? container.decode([String].self, forKey: .tagList)
         let slug = try? container.decode(String.self, forKey: .slug)
         let path = try? container.decode(String.self, forKey: .path)
@@ -114,7 +109,6 @@ extension Article : Decodable {
                   title: title!,
                   description: description!,
                   coverImageUrl: coverImageUrl,
-                  publishedAt: publishedAt!,
                   tagList: tagList!,
                   slug: slug!,
                   path: path!,
