@@ -66,7 +66,7 @@ struct Article {
 //MARK: Decodable
 extension Article : Decodable {
     
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case typeOf = "type_of"
         case id = "id"
         case title = "title"

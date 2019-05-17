@@ -33,7 +33,7 @@ struct Organization {
 //MARK: Decodable
 extension Organization : Decodable {
     
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case name = "name"
         case username = "username"
         case slug = "slug"

@@ -39,7 +39,7 @@ struct User {
 //MARK: Decodable
 extension User : Decodable {
     
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case name = "name"
         case username = "username"
         case twitterUserName = "twitter_username"

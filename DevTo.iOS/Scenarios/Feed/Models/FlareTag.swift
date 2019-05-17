@@ -27,7 +27,7 @@ struct FlareTag {
 //MARK: Decodable
 extension FlareTag : Decodable {
     
-    enum CodingKeys: String, CodingKey {
+    private enum CodingKeys: String, CodingKey {
         case name = "name"
         case backgroundColorHex = "bg_color_hex"
         case textColorHex = "text_color_hex"
