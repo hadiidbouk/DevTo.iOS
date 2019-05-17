@@ -13,7 +13,8 @@ import RxCocoa
 class FeedViewController: UIViewController {
 
     private let disposeBag = DisposeBag()
-
+    private var viewModel: FeedViewModel!
+    
     var currentFeedType: String = ""
     
     //UI
@@ -26,6 +27,8 @@ class FeedViewController: UIViewController {
     
     init() {
         super.init(nibName: nil, bundle: nil)
+        
+        viewModel = FeedViewModel()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -60,6 +63,9 @@ extension FeedViewController {
         feedTableView.separatorStyle = .none
         feedTableView.tableFooterView = UIView()
         
+        feedTableView.rowHeight = UITableView.automaticDimension
+        feedTableView.estimatedRowHeight = 100
+        
         feedTableViewHeader = FeedTableViewHeader()
         feedTableView.tableHeaderView = feedTableViewHeader
         
@@ -70,6 +76,14 @@ extension FeedViewController {
             $0.trailingConstaint(constant: 0)
             $0.bottomConstraint(constant: 0)
         }
+        
+        feedTableView.register(FeedTableViewCell.self, forCellReuseIdentifier: FeedTableViewCell.className)
+        
+        viewModel.articles
+            .bind(to: feedTableView.rx.items(cellIdentifier: FeedTableViewCell.className, cellType: FeedTableViewCell.self)) { (row, element, cell) in
+                cell.bindViews(article: element)
+            }
+            .disposed(by: disposeBag)
     }
     
     private func setupFeedFilterPickerAlert() {
