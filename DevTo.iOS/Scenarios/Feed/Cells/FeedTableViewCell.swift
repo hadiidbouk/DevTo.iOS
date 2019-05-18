@@ -34,12 +34,30 @@ class FeedTableViewCell: UITableViewCell {
 extension FeedTableViewCell {
     
     func setupUI() {
-              
+        
+        contentView.backgroundColor = AppColors.feedTableViewBackground
+        
+        let containerView = UIView()
+        containerView.backgroundColor = .white
+        containerView.layer.borderColor = AppColors.feedTableViewCellBorderColor?.cgColor
+        containerView.layer.borderWidth = 1
+        containerView.layer.masksToBounds = false
+        containerView.layer.shadowOffset = CGSize(width: 0.3, height: 0.3)
+        containerView.layer.shadowColor = AppColors.feedTableViewCellShadowColor?.cgColor
+        containerView.layer.shadowOpacity = 0.2
+        
+        addSubview(containerView)
+        containerView.apply {
+            $0.leadingConstraint(constant: 20)
+            $0.trailingConstaint(constant: -20)
+            $0.topConstraint(constant: 20)
+        }
+        
         rootStackView = UIStackView()
         rootStackView.distribution = .fillProportionally
         rootStackView.axis = .vertical
         
-        addSubview(rootStackView)
+        containerView.addSubview(rootStackView)
         rootStackView.apply {
             $0.topConstraint(constant: 20)
             $0.trailingConstaint(constant: -20)
@@ -161,7 +179,7 @@ extension FeedTableViewCell {
         let reactionsStackView = getIconAndTextStackView(icon: #imageLiteral(resourceName: "likes"), text: "43")
         reactionsAndCommentsContainer.addSubview(reactionsStackView)
         reactionsStackView.apply {
-            $0.leadingConstraint(constant: 20)
+            $0.leadingConstraint(constant: 10)
             $0.centerToParentVertical()
         }
         
@@ -214,7 +232,7 @@ extension FeedTableViewCell {
         saveImageView.apply {
             $0.widthConstraint(constant: 50)
             $0.heightConstraint(constant: 50)
-            $0.trailingConstaint(constant: -20)
+            $0.trailingConstaint(constant: 0)
             $0.centerToParentVertical()
         }
         

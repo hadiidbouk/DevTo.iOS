@@ -24,7 +24,7 @@ class FeedTableViewHeader : UIView {
     
     init() {
         
-        super.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 60))
+        super.init(frame: CGRect(x: 0, y: 25, width: UIScreen.main.bounds.width, height: 40))
         
         setupUI()
         setupTapGestures()
@@ -40,7 +40,7 @@ extension FeedTableViewHeader {
     
     private func setupUI() {
         
-        backgroundColor = .white
+        backgroundColor = AppColors.feedTableViewBackground
         
         setupLeftImageView()
         setupRightImageView()
@@ -100,12 +100,17 @@ extension FeedTableViewHeader {
         feedTypeButton.setTitle(FeedType.myDevFeed.rawValue, for: .normal)
         feedTypeButton.setTitleColor(.black, for: .normal)
         feedTypeButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        feedTypeButton.contentVerticalAlignment = .bottom
         
         addSubview(feedTypeButton)
         feedTypeButton.apply {
             $0.centerToParentHorizontal()
             $0.topConstraint(constant: 0)
             $0.bottomConstraint(constant: 0)
+        }
+        
+        feedTypeButton.titleLabel!.apply {
+            $0.bottomConstraint(constant: 30)
         }
     }
 }
