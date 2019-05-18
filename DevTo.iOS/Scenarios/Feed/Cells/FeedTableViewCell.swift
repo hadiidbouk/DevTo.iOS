@@ -61,7 +61,7 @@ extension FeedTableViewCell {
         rootStackView.apply {
             $0.topConstraint(constant: 20)
             $0.trailingConstaint(constant: -20)
-            $0.bottomConstraint(constant: -20)
+            $0.bottomConstraint(constant: -10)
             $0.leadingConstraint(constant: 20)
         }
         
