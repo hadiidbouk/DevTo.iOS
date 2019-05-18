@@ -49,6 +49,7 @@ extension FeedTableViewCell {
         
         setImageAndTitleStackView()
         setNameDateAndTagsStackView()
+        setBottomView()
     }
     
     private func setImageAndTitleStackView() {
@@ -128,5 +129,106 @@ extension FeedTableViewCell {
             $0.trailingConstaint(constant: -15)
         }
         rootStackView.addArrangedSubview(nameDateTagsStackView)
+    }
+    
+    private func setBottomView() {
+        
+        let bottomViewContainer = UIView()
+        
+        let reactionsAndCommentsView = getReactionsAndCommentsView()
+        bottomViewContainer.addSubview(reactionsAndCommentsView)
+        reactionsAndCommentsView.apply {
+            $0.leadingConstraint(constant: 0)
+            $0.centerToParentVertical()
+        }
+        
+        let timeToReadAndSaveView = getTimeToReadAndSaveView()
+        bottomViewContainer.addSubview(timeToReadAndSaveView)
+        timeToReadAndSaveView.apply {
+            $0.trailingConstaint(constant: 0)
+            $0.centerToParentVertical()
+        }
+        rootStackView.addArrangedSubview(bottomViewContainer)
+        bottomViewContainer.apply {
+            $0.heightConstraint(constant: 40)
+        }
+    }
+    
+    private func getReactionsAndCommentsView() -> UIView {
+        
+        let reactionsAndCommentsContainer = UIView()
+        
+        let reactionsStackView = getIconAndTextStackView(icon: #imageLiteral(resourceName: "likes"), text: "43")
+        reactionsAndCommentsContainer.addSubview(reactionsStackView)
+        reactionsStackView.apply {
+            $0.leadingConstraint(constant: 20)
+            $0.centerToParentVertical()
+        }
+        
+        let commentsStackView = getIconAndTextStackView(icon: #imageLiteral(resourceName: "comment"), text: "59")
+        reactionsAndCommentsContainer.addSubview(commentsStackView)
+        commentsStackView.apply {
+            $0.centerToParentVertical()
+            $0.leadingConstraint(onTrailingOf: reactionsStackView, constant: 10)
+        }
+        
+        return reactionsAndCommentsContainer
+    }
+    
+    private func getIconAndTextStackView(icon: UIImage, text: String) -> UIStackView {
+        
+        let iconAndTextStackView = UIStackView()
+        iconAndTextStackView.axis = .horizontal
+        iconAndTextStackView.distribution = .fillEqually
+        iconAndTextStackView.spacing = 10
+        
+        let iconImageView = UIImageView()
+        iconImageView.image = icon
+        iconImageView.contentMode = .scaleAspectFit
+        
+        iconAndTextStackView.addArrangedSubview(iconImageView)
+        iconImageView.apply {
+            $0.widthConstraint(constant: 30)
+            $0.heightConstraint(constant: 30)
+        }
+        
+        let textLbl = UILabel()
+        textLbl.text = text
+        textLbl.font = UIFont.boldSystemFont(ofSize: 13)
+        textLbl.textColor = .gray
+        
+        iconAndTextStackView.addArrangedSubview(textLbl)
+        
+        return iconAndTextStackView
+    }
+    
+    private func getTimeToReadAndSaveView() -> UIView {
+        
+        let timeToReadAndSaveContainer = UIView()
+        
+        let saveImageView = UIImageView()
+        saveImageView.image = #imageLiteral(resourceName: "save")
+        saveImageView.contentMode = .scaleAspectFit
+        
+        timeToReadAndSaveContainer.addSubview(saveImageView)
+        saveImageView.apply {
+            $0.widthConstraint(constant: 50)
+            $0.heightConstraint(constant: 50)
+            $0.trailingConstaint(constant: -20)
+            $0.centerToParentVertical()
+        }
+        
+        let timeToReadLbl = UILabel()
+        timeToReadLbl.text = "8 min read"
+        timeToReadLbl.font = UIFont.boldSystemFont(ofSize: 13)
+        timeToReadLbl.textColor = .gray
+        
+        timeToReadAndSaveContainer.addSubview(timeToReadLbl)
+        timeToReadLbl.apply {
+            $0.trailingConstaint(onLeadingOf: saveImageView, constant: -20)
+            $0.centerToParentVertical()
+        }
+        
+        return timeToReadAndSaveContainer
     }
 }
