@@ -99,6 +99,12 @@ extension UIView {
         self.leadingAnchor.constraint(equalTo: view.trailingAnchor, constant: constant).isActive = true
     }
     
+    func leadingConstraint(view: UIView, constant: CGFloat) {
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant).isActive = true
+    }
+    
     //MARK: - Center Constraints
     func centerToParentHorizontal() {
         
