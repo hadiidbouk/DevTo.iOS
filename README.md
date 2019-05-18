@@ -6,7 +6,7 @@
 DevTo is an unofficial iOS app for [Dev.to](https://dev.to) website
 
 ## App Progress
-<img src="https://github.com/hadiidbouk/DevTo.iOS/blob/dev/App%20Progress/2019-05-15.png?raw=true" height="500px"/>
+<img src="https://github.com/hadiidbouk/DevTo.iOS/blob/dev/App%20Progress/2019-05-18.png?raw=true" height="500px"/>
 
 ## 🧐 Why am I building this?
 
