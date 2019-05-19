@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FeedTableViewCell: UITableViewCell {
 
@@ -16,6 +17,11 @@ class FeedTableViewCell: UITableViewCell {
     var userImageView: UIImageView!
     var nameAndDateContainer: UIView!
     var imageAndTitleStackView: UIStackView!
+    var reactionsStackView: UIStackView!
+    var commentsStackView: UIStackView!
+    var tagListLbl: UILabel!
+    var nameAndDateLbl: UILabel!
+    var timeAgoLbl: UILabel!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -28,8 +34,88 @@ class FeedTableViewCell: UITableViewCell {
     }
     
     func bindViews(article: Article) {
+        
+        // title
         titleLbl.text = article.title
-        updateImageAndTitleStackViewAligment(text: article.title)
+        
+        // reactions
+        reactionsStackView.arrangedSubviews.forEach { view in
+            
+            if let label = view as? UILabel {
+                if article.positiveReactionsCount == 0 {
+                    label.isHidden = true
+                } else {
+                    label.text = "\(article.positiveReactionsCount)"
+                    label.isHidden = false
+                }
+            }
+            
+            if let imageView = view as? UIImageView {
+                if article.positiveReactionsCount == 0 {
+                    imageView.isHidden = true
+                } else {
+                    imageView.isHidden = false
+                }
+            }
+        }
+        
+        //comments
+        commentsStackView.arrangedSubviews.forEach { view in
+            if let label = view as? UILabel {
+                
+                if article.commentsCount == 0 {
+                    label.isHidden = true
+                } else {
+                    label.text = "\(article.commentsCount)"
+                    label.isHidden = false
+                }
+            }
+            
+            if let imageView = view as? UIImageView {
+                if article.commentsCount == 0 {
+                    imageView.isHidden = true
+                } else {
+                    imageView.isHidden = false
+                }
+            }
+        }
+        
+        // tags
+        let tags = article.tagList.map { "#\($0)" }.joined(separator: " ")
+        tagListLbl.text = tags
+        
+        // name and date
+        let name = article.user.name
+        let format = DateFormatter()
+        format.dateFormat = "MMMM dd"
+        let formattedDate = format.string(from: article.publishedTimestamp)
+        let nameAndDate = "\(name)・\(formattedDate)"
+        nameAndDateLbl.text = nameAndDate
+        
+        // time Ago
+        if let timeAgoText = article.publishedTimestamp.getDayIntervalTimeAgo() {
+            timeAgoLbl.isHidden = false
+            timeAgoLbl.text = "(\(timeAgoText))"
+        } else {
+            timeAgoLbl.isHidden = true
+        }
+        
+        // userImageView
+        if let profileImageUrl = URL(string: article.user.profileImage90Url) {
+            
+            userImageView.kf.setImage(with: profileImageUrl, options: [
+                .scaleFactor(UIScreen.main.scale),
+                .transition(.fade(0.3)),
+                .cacheOriginalImage
+                ])
+        }
+
+        //In order to fix dynamic cell heights only correct after some scrolling
+        layoutIfNeeded()
+        
+        self.updateImageAndTitleStackViewAligment(text: article.title)
+        
+        selectionStyle = .none
     }
     
     //Center titleLbl text if line count equal to 1
@@ -73,7 +159,7 @@ extension FeedTableViewCell {
         }
         
         rootStackView = UIStackView()
-        rootStackView.distribution = .fillProportionally
+        rootStackView.distribution = .fill
         rootStackView.axis = .vertical
         
         containerView.addSubview(rootStackView)
@@ -132,18 +218,30 @@ extension FeedTableViewCell {
             $0.heightConstraint(constant: 28)
         }
         
-        let nameAndDateLbl = UILabel()
+        nameAndDateLbl = UILabel()
         nameAndDateLbl.text = "Andrew Stetsenko ・ Apr 23"
-        nameAndDateLbl.textColor = .lightGray
+        nameAndDateLbl.textColor = .gray
         nameAndDateLbl.textAlignment = .left
-        nameAndDateLbl.font = nameAndDateLbl.font.withSize(14)
+        nameAndDateLbl.font = UIFont.boldSystemFont(ofSize: 13)
         
         nameAndDateContainer.addSubview(nameAndDateLbl)
         nameAndDateLbl.apply {
             $0.topConstraint(constant: 10)
-            $0.trailingConstaint(constant: -15)
             $0.bottomConstraint(constant: 0)
             $0.leadingConstraint(constant: 40 + 10)
+        }
+        
+        timeAgoLbl = UILabel()
+        timeAgoLbl.text = "(9 mins ago)"
+        timeAgoLbl.textColor = .lightGray
+        timeAgoLbl.textAlignment = .left
+        timeAgoLbl.font = nameAndDateLbl.font.withSize(11)
+        nameAndDateContainer.addSubview(timeAgoLbl)
+        timeAgoLbl.apply {
+            $0.topConstraint(constant: 10)
+            $0.trailingConstaint(constant: -15)
+            $0.bottomConstraint(constant: 0)
+            $0.leadingConstraint(onTrailingOf: nameAndDateLbl, constant: 5)
         }
         
         let tagListContainer = UIView()
@@ -153,7 +251,7 @@ extension FeedTableViewCell {
             $0.heightConstraint(constant: 28)
         }
         
-        let tagListLbl = UILabel()
+        tagListLbl = UILabel()
         tagListLbl.text = "#pyhton #jobsearch #careeradvice #employment"
         tagListLbl.textAlignment = .left
         tagListLbl.font = tagListLbl.font.withSize(14)
@@ -195,14 +293,14 @@ extension FeedTableViewCell {
         
         let reactionsAndCommentsContainer = UIView()
         
-        let reactionsStackView = getIconAndTextStackView(icon: #imageLiteral(resourceName: "likes"), text: "43")
+        reactionsStackView = getIconAndTextStackView(icon: #imageLiteral(resourceName: "likes"), text: "43")
         reactionsAndCommentsContainer.addSubview(reactionsStackView)
         reactionsStackView.apply {
             $0.leadingConstraint(constant: 5)
             $0.centerToParentVertical()
         }
         
-        let commentsStackView = getIconAndTextStackView(icon: #imageLiteral(resourceName: "comment"), text: "59")
+        commentsStackView = getIconAndTextStackView(icon: #imageLiteral(resourceName: "comment"), text: "59")
         reactionsAndCommentsContainer.addSubview(commentsStackView)
         commentsStackView.apply {
             $0.centerToParentVertical()
