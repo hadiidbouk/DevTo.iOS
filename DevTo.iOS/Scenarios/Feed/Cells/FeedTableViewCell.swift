@@ -10,10 +10,12 @@ import UIKit
 
 class FeedTableViewCell: UITableViewCell {
 
+    var containerView: UIView!
     var rootStackView: UIStackView!
     var titleLbl: UILabel!
     var userImageView: UIImageView!
     var nameAndDateContainer: UIView!
+    var imageAndTitleStackView: UIStackView!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -26,7 +28,23 @@ class FeedTableViewCell: UITableViewCell {
     }
     
     func bindViews(article: Article) {
+        titleLbl.text = article.title
+        updateImageAndTitleStackViewAligment(text: article.title)
+    }
+    
+    //Center titleLbl text if line count equal to 1
+    private func updateImageAndTitleStackViewAligment(text: String) {
+        let textSize = CGSize(width: titleLbl.frame.size.width, height: CGFloat(Float.infinity))
+        let rHeight = Float(titleLbl.sizeThatFits(textSize).height)
+        var lineCount:Float = 0
+        let charSize = Float(titleLbl.font.lineHeight)
+        lineCount = floor(rHeight / charSize)
         
+        if lineCount == 1 {
+            imageAndTitleStackView.alignment = .center
+        } else {
+            imageAndTitleStackView.alignment = .top
+        }
     }
 }
 
@@ -37,7 +55,7 @@ extension FeedTableViewCell {
         
         contentView.backgroundColor = AppColors.feedTableViewBackground
         
-        let containerView = UIView()
+        containerView = UIView()
         containerView.backgroundColor = .white
         containerView.layer.borderColor = AppColors.feedTableViewCellBorderColor?.cgColor
         containerView.layer.borderWidth = 1
@@ -46,11 +64,12 @@ extension FeedTableViewCell {
         containerView.layer.shadowColor = AppColors.feedTableViewCellShadowColor?.cgColor
         containerView.layer.shadowOpacity = 0.2
         
-        addSubview(containerView)
+        contentView.addSubview(containerView)
         containerView.apply {
-            $0.leadingConstraint(constant: 20)
-            $0.trailingConstaint(constant: -20)
-            $0.topConstraint(constant: 20)
+            $0.leadingConstraint(constant: 15)
+            $0.trailingConstaint(constant: -15)
+            $0.topConstraint(constant: 15)
+            $0.bottomConstraint(constant: 0)
         }
         
         rootStackView = UIStackView()
@@ -72,11 +91,11 @@ extension FeedTableViewCell {
     
     private func setImageAndTitleStackView() {
         
-        let imageAndTitleStackView = UIStackView()
+        imageAndTitleStackView = UIStackView()
         imageAndTitleStackView.axis = .horizontal
-        imageAndTitleStackView.distribution = .fill
-        imageAndTitleStackView.alignment = .lastBaseline
+        imageAndTitleStackView.distribution = .fillProportionally
         imageAndTitleStackView.spacing = 10
+        
         
         userImageView = UIImageView()
         userImageView.image = #imageLiteral(resourceName: "dev_icon")
@@ -179,7 +198,7 @@ extension FeedTableViewCell {
         let reactionsStackView = getIconAndTextStackView(icon: #imageLiteral(resourceName: "likes"), text: "43")
         reactionsAndCommentsContainer.addSubview(reactionsStackView)
         reactionsStackView.apply {
-            $0.leadingConstraint(constant: 10)
+            $0.leadingConstraint(constant: 5)
             $0.centerToParentVertical()
         }
         
@@ -187,7 +206,7 @@ extension FeedTableViewCell {
         reactionsAndCommentsContainer.addSubview(commentsStackView)
         commentsStackView.apply {
             $0.centerToParentVertical()
-            $0.leadingConstraint(onTrailingOf: reactionsStackView, constant: 10)
+            $0.leadingConstraint(onTrailingOf: reactionsStackView, constant: 5)
         }
         
         return reactionsAndCommentsContainer
@@ -197,7 +216,7 @@ extension FeedTableViewCell {
         
         let iconAndTextStackView = UIStackView()
         iconAndTextStackView.axis = .horizontal
-        iconAndTextStackView.distribution = .fillEqually
+        iconAndTextStackView.distribution = .fillProportionally
         iconAndTextStackView.spacing = 10
         
         let iconImageView = UIImageView()
