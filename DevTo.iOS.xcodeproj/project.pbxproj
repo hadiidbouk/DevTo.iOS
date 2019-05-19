@@ -35,6 +35,8 @@
 		315F1AE62291458700B4A988 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AE52291458700B4A988 /* Date+Extensions.swift */; };
 		315F1AEC2291517300B4A988 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AEB2291517300B4A988 /* UITableViewCell+Extensions.swift */; };
 		315F1AEE2291537100B4A988 /* ArticleDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AED2291537100B4A988 /* ArticleDto.swift */; };
+		315F1AF122918DDB00B4A988 /* ArticleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AF022918DDB00B4A988 /* ArticleDetailsViewController.swift */; };
+		315F1AF522918F2500B4A988 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AF422918F2500B4A988 /* BaseViewController.swift */; };
 		BDD7229EEA05E3D6A5A0CB5C /* Pods_DevTo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2598C52E35F7B759959CED35 /* Pods_DevTo_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,8 @@
 		315F1AE52291458700B4A988 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 		315F1AEB2291517300B4A988 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		315F1AED2291537100B4A988 /* ArticleDto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDto.swift; sourceTree = "<group>"; };
+		315F1AF022918DDB00B4A988 /* ArticleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsViewController.swift; sourceTree = "<group>"; };
+		315F1AF422918F2500B4A988 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BB1D32F40475879B2FA7E572 /* Pods-DevTo.iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTo.iOS.release.xcconfig"; path = "Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C2BB02589E061581FDBF5C06 /* Pods-DevTo.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTo.iOS.debug.xcconfig"; path = "Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,7 +142,9 @@
 		31376746228AA30E00F46C7A /* Scenarios */ = {
 			isa = PBXGroup;
 			children = (
+				315F1AEF22918D9200B4A988 /* ArticleDetails */,
 				31376747228AA32A00F46C7A /* Feed */,
+				315F1AF422918F2500B4A988 /* BaseViewController.swift */,
 			);
 			path = Scenarios;
 			sourceTree = "<group>";
@@ -277,6 +283,14 @@
 				3137676F228C1E8E00F46C7A /* FeedTableViewHeader.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		315F1AEF22918D9200B4A988 /* ArticleDetails */ = {
+			isa = PBXGroup;
+			children = (
+				315F1AF022918DDB00B4A988 /* ArticleDetailsViewController.swift */,
+			);
+			path = ArticleDetails;
 			sourceTree = "<group>";
 		};
 		84F2C6A752B3669B808E4D9B /* Pods */ = {
@@ -460,12 +474,14 @@
 				3137676E228AE7BD00F46C7A /* AppColors.swift in Sources */,
 				3137675F228AAC6200F46C7A /* UIViewController+Extensions.swift in Sources */,
 				31376772228C222500F46C7A /* FeedViewModel.swift in Sources */,
+				315F1AF522918F2500B4A988 /* BaseViewController.swift in Sources */,
 				3137675B228AABFF00F46C7A /* Apply.swift in Sources */,
 				31376751228AA52100F46C7A /* AppCoordinator.swift in Sources */,
 				3137674C228AA40F00F46C7A /* FeedViewController.swift in Sources */,
 				3137676C228AE79800F46C7A /* UIColor+Extensions.swift in Sources */,
 				31376733228985C100F46C7A /* AppDelegate.swift in Sources */,
 				3137677F228EA14300F46C7A /* FlareTag.swift in Sources */,
+				315F1AF122918DDB00B4A988 /* ArticleDetailsViewController.swift in Sources */,
 				315F1AEE2291537100B4A988 /* ArticleDto.swift in Sources */,
 				31376770228C1E8E00F46C7A /* FeedTableViewHeader.swift in Sources */,
 				31376761228AD15500F46C7A /* UIScreen+Extensions.swift in Sources */,

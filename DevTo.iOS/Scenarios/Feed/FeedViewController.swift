@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class FeedViewController: UIViewController {
+class FeedViewController: BaseViewController {
 
     private let disposeBag = DisposeBag()
     private var viewModel: FeedViewModel!
@@ -18,7 +18,6 @@ class FeedViewController: UIViewController {
     var currentFeedType: String = ""
     
     //UI
-    var navigationBarView: NavigationBarView!
     var feedTableView: UITableView!
     var feedTableViewHeader: FeedTableViewHeader!
     var feedTypesAlertController: UIAlertController!
@@ -51,11 +50,6 @@ extension FeedViewController {
         setupFeedTableView()
         setupFeedFilterPickerAlert()
         setupViewActions()
-    }
-    
-    private func setupNavigationBarView() {
-        navigationBarView = NavigationBarView()
-        navigationBarView.setToTop(view: view)
     }
     
     private func setupFeedTableView() {
