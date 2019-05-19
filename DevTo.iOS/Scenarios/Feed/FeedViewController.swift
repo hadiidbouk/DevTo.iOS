@@ -13,7 +13,7 @@ import RxCocoa
 class FeedViewController: BaseViewController {
 
     private let disposeBag = DisposeBag()
-    private var viewModel: FeedViewModel!
+    var viewModel: FeedViewModel!
     
     var currentFeedType: String = ""
     
@@ -80,6 +80,15 @@ extension FeedViewController {
             .setDelegate(self)
             .disposed(by: disposeBag)
 
+        feedTableView
+        .rx
+        .itemSelected
+        .bind(onNext: { [weak self] indexPath in
+            guard let strongSelf = self else { return }
+            let article = strongSelf.viewModel.articles.value[indexPath.row]
+            strongSelf.viewModel.showDetails.on(.next(article.id))
+        }).disposed(by: disposeBag)
+        
         viewModel.articles
             .bind(to: feedTableView.rx.items(cellIdentifier: FeedTableViewCell.className, cellType: FeedTableViewCell.self)) { [weak self] (row, element, cell) in
                 guard let strongSelf = self else { return }

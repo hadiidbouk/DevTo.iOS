@@ -7,10 +7,13 @@
 //
 
 import RxSwift
+import RxCocoa
 
 class FeedViewModel {
     
-    let articles: Observable<[Article]>
+    let articles: BehaviorRelay<[Article]>
+    
+    var showDetails = PublishSubject<Int>()
     
     init() {
        
@@ -27,7 +30,8 @@ class FeedViewModel {
         } catch {
             fatalError()
         }
-        self.articles = Observable.just(articles)
+        
+        self.articles = BehaviorRelay<[Article]>(value: articles)
     }
 }
 
