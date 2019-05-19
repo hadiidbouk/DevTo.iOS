@@ -8,4 +8,5 @@ target 'DevTo.iOS' do
   # Pods for DevTo.iOS
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Kingfisher'
 end
