@@ -10,6 +10,8 @@ import UIKit
 
 class ArticleDetailsViewController: BaseViewController {
 
+    var bottomView: ArticleDetailsBottomView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,15 @@ class ArticleDetailsViewController: BaseViewController {
 extension ArticleDetailsViewController {
     
     private func setupUI() {
+        
+        view.backgroundColor = .white
+        
         setupNavigationBarView()
+        setupBottomView()
+    }
+    
+    private func setupBottomView() {
+        bottomView = ArticleDetailsBottomView()
+        bottomView.setToBottom(view: view)
     }
 }

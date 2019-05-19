@@ -33,4 +33,12 @@ struct AppColors {
     static var feedTableViewCellShadowColor: UIColor? = {
         return UIColor(hex: "#c2c2c2")
     }()
+    
+    static var articleDetailsBottomViewActionBackground: UIColor? = {
+        return UIColor(hex: "#EDEEF0")
+    }()
+    
+    static var articleDetailsBottomViewActionText: UIColor? = {
+        return UIColor(hex: "#666666")
+    }()
 }

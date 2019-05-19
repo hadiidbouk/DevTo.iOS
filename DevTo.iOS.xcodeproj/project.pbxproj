@@ -39,6 +39,8 @@
 		315F1AF522918F2500B4A988 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AF422918F2500B4A988 /* BaseViewController.swift */; };
 		315F1AF7229191A900B4A988 /* ArticleDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AF6229191A900B4A988 /* ArticleDetailsCoordinator.swift */; };
 		315F1AFB22919FF300B4A988 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AFA22919FF300B4A988 /* UINavigationController+Extensions.swift */; };
+		315F1AFE2291A5DF00B4A988 /* ArticleDetailsBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AFD2291A5DF00B4A988 /* ArticleDetailsBottomView.swift */; };
+		315F1B002291AD1700B4A988 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AFF2291AD1700B4A988 /* UIImage+Extensions.swift */; };
 		BDD7229EEA05E3D6A5A0CB5C /* Pods_DevTo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2598C52E35F7B759959CED35 /* Pods_DevTo_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 		315F1AF422918F2500B4A988 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		315F1AF6229191A900B4A988 /* ArticleDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsCoordinator.swift; sourceTree = "<group>"; };
 		315F1AFA22919FF300B4A988 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
+		315F1AFD2291A5DF00B4A988 /* ArticleDetailsBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsBottomView.swift; sourceTree = "<group>"; };
+		315F1AFF2291AD1700B4A988 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		BB1D32F40475879B2FA7E572 /* Pods-DevTo.iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTo.iOS.release.xcconfig"; path = "Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C2BB02589E061581FDBF5C06 /* Pods-DevTo.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTo.iOS.debug.xcconfig"; path = "Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +226,7 @@
 				315F1AE52291458700B4A988 /* Date+Extensions.swift */,
 				315F1AEB2291517300B4A988 /* UITableViewCell+Extensions.swift */,
 				315F1AFA22919FF300B4A988 /* UINavigationController+Extensions.swift */,
+				315F1AFF2291AD1700B4A988 /* UIImage+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,10 +298,19 @@
 		315F1AEF22918D9200B4A988 /* ArticleDetails */ = {
 			isa = PBXGroup;
 			children = (
+				315F1AFC2291A50300B4A988 /* Views */,
 				315F1AF022918DDB00B4A988 /* ArticleDetailsViewController.swift */,
 				315F1AF6229191A900B4A988 /* ArticleDetailsCoordinator.swift */,
 			);
 			path = ArticleDetails;
+			sourceTree = "<group>";
+		};
+		315F1AFC2291A50300B4A988 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				315F1AFD2291A5DF00B4A988 /* ArticleDetailsBottomView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		84F2C6A752B3669B808E4D9B /* Pods */ = {
@@ -499,6 +513,8 @@
 				3137677B228E9FEE00F46C7A /* Organization.swift in Sources */,
 				3137674F228AA4EF00F46C7A /* Coordinator.swift in Sources */,
 				31376775228C226000F46C7A /* FeedType.swift in Sources */,
+				315F1B002291AD1700B4A988 /* UIImage+Extensions.swift in Sources */,
+				315F1AFE2291A5DF00B4A988 /* ArticleDetailsBottomView.swift in Sources */,
 				315F1AFB22919FF300B4A988 /* UINavigationController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
