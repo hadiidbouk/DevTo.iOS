@@ -63,6 +63,7 @@ extension FeedViewController {
         feedTableView.separatorStyle = .none
         feedTableView.tableFooterView = UIView()
         feedTableView.backgroundColor = AppColors.feedTableViewBackground
+        feedTableView.showsVerticalScrollIndicator = false
         
         feedTableView.rowHeight = UITableView.automaticDimension
         feedTableView.estimatedRowHeight = 100
