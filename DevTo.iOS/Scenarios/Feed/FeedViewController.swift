@@ -63,6 +63,7 @@ extension FeedViewController {
         feedTableView.separatorStyle = .none
         feedTableView.tableFooterView = UIView()
         feedTableView.backgroundColor = AppColors.feedTableViewBackground
+        feedTableView.showsVerticalScrollIndicator = false
         
         feedTableView.rowHeight = UITableView.automaticDimension
         feedTableView.estimatedRowHeight = 100
@@ -80,9 +81,16 @@ extension FeedViewController {
         
         feedTableView.register(FeedTableViewCell.self, forCellReuseIdentifier: FeedTableViewCell.className)
         
+        feedTableView
+            .rx
+            .setDelegate(self)
+            .disposed(by: disposeBag)
+
         viewModel.articles
-            .bind(to: feedTableView.rx.items(cellIdentifier: FeedTableViewCell.className, cellType: FeedTableViewCell.self)) { (row, element, cell) in
-                cell.bindViews(article: element)
+            .bind(to: feedTableView.rx.items(cellIdentifier: FeedTableViewCell.className, cellType: FeedTableViewCell.self)) { [weak self] (row, element, cell) in
+                guard let strongSelf = self else { return }
+                let dto = strongSelf.viewModel.transform(article: element)
+                cell.bindViews(dto: dto)
             }
             .disposed(by: disposeBag)
     }
@@ -154,5 +162,14 @@ extension FeedViewController {
             guard let rowIndex = value.element?.row else { return }
             self?.currentFeedType = FeedType.allCases[rowIndex].rawValue
         }).disposed(by: disposeBag)
+    }
+}
+
+//MARK: - UITableViewDelegate
+extension FeedViewController : UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        cell.animate()
     }
 }
