@@ -33,6 +33,7 @@
 		31376794228EC06E00F46C7A /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31376793228EC06E00F46C7A /* FeedTableViewCell.swift */; };
 		3137679522908E7600F46C7A /* articles.json in Resources */ = {isa = PBXBuildFile; fileRef = 3137678F228EABEF00F46C7A /* articles.json */; };
 		315F1AE62291458700B4A988 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AE52291458700B4A988 /* Date+Extensions.swift */; };
+		315F1AEC2291517300B4A988 /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AEB2291517300B4A988 /* UITableViewCell+Extensions.swift */; };
 		BDD7229EEA05E3D6A5A0CB5C /* Pods_DevTo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2598C52E35F7B759959CED35 /* Pods_DevTo_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		3137678F228EABEF00F46C7A /* articles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = articles.json; sourceTree = "<group>"; };
 		31376793228EC06E00F46C7A /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		315F1AE52291458700B4A988 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		315F1AEB2291517300B4A988 /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		BB1D32F40475879B2FA7E572 /* Pods-DevTo.iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTo.iOS.release.xcconfig"; path = "Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C2BB02589E061581FDBF5C06 /* Pods-DevTo.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTo.iOS.debug.xcconfig"; path = "Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,6 +208,7 @@
 				31376760228AD15500F46C7A /* UIScreen+Extensions.swift */,
 				3137676B228AE79800F46C7A /* UIColor+Extensions.swift */,
 				315F1AE52291458700B4A988 /* Date+Extensions.swift */,
+				315F1AEB2291517300B4A988 /* UITableViewCell+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31376758228AABB500F46C7A /* UIView+Extensions.swift in Sources */,
+				315F1AEC2291517300B4A988 /* UITableViewCell+Extensions.swift in Sources */,
 				315F1AE62291458700B4A988 /* Date+Extensions.swift in Sources */,
 				31376753228AA86600F46C7A /* FeedCoordinator.swift in Sources */,
 				3137676A228AE14A00F46C7A /* NavigationBarView.swift in Sources */,

@@ -81,6 +81,11 @@ extension FeedViewController {
         
         feedTableView.register(FeedTableViewCell.self, forCellReuseIdentifier: FeedTableViewCell.className)
         
+        feedTableView
+            .rx
+            .setDelegate(self)
+            .addDisposableTo(disposeBag)
+
         viewModel.articles
             .bind(to: feedTableView.rx.items(cellIdentifier: FeedTableViewCell.className, cellType: FeedTableViewCell.self)) { (row, element, cell) in
                 cell.bindViews(article: element)
@@ -155,5 +160,14 @@ extension FeedViewController {
             guard let rowIndex = value.element?.row else { return }
             self?.currentFeedType = FeedType.allCases[rowIndex].rawValue
         }).disposed(by: disposeBag)
+    }
+}
+
+//MARK: - UITableViewDelegate
+extension FeedViewController : UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        cell.animate()
     }
 }
