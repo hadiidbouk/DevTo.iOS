@@ -1,120 +1,557 @@
 [
     {
         "type_of": "article",
-        "id": 109239,
-        "title": "Things I Wish I Knew Before I Started Web Development",
-        "description": "It's always good to look back and think about the decisions you made so you can do better next time and so you can helps others do better. There were some things I wish I knew before I started web development and I thought I would share them with you. ",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--uyDYWg1V--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://cdn-images-1.medium.com/max/800/1%2Afnn7T6JpXofNy63brskKJQ.jpeg",
-        "published_at": "2019-05-16T12:31:58.776Z",
+        "id": 86924,
+        "title": "CSS can do that?",
+        "description": "A list of amazing things that CSS can do",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--luy4Djca--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/1s5uz7cylwxtoybknebu.png",
+        "published_at": "2019-05-17T21:42:09.949Z",
         "tag_list": [
             "webdev",
+            "css"
+        ],
+        "slug": "css-can-do-that-18g7",
+        "path": "/ananyaneogi/css-can-do-that-18g7",
+        "url": "https://dev.to/ananyaneogi/css-can-do-that-18g7",
+        "canonical_url": "https://dev.to/ananyaneogi/css-can-do-that-18g7",
+        "comments_count": 18,
+        "positive_reactions_count": 332,
+        "published_timestamp": "2019-05-17T21:42:09Z",
+        "user": {
+            "name": "Ananya Neogi",
+            "username": "ananyaneogi",
+            "twitter_username": "_ananyaneogi",
+            "github_username": "ananyaneogi",
+            "website_url": "https://ananyaneogi.com",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--Ektp50R0--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/106991/b638bf70-656a-4a24-810e-4b302265d982.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--gv_CWUYL--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/106991/b638bf70-656a-4a24-810e-4b302265d982.jpeg"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 110105,
+        "title": "User-test an open source project [My tech writing process: part 1]",
+        "description": "",
+        "cover_image": null,
+        "published_at": "2019-05-18T13:40:53.094Z",
+        "tag_list": [
+            "writing",
+            "opensource"
+        ],
+        "slug": "user-test-an-open-source-project-my-tech-writing-process-part-1-2kh9",
+        "path": "/amrutaranade/user-test-an-open-source-project-my-tech-writing-process-part-1-2kh9",
+        "url": "https://dev.to/amrutaranade/user-test-an-open-source-project-my-tech-writing-process-part-1-2kh9",
+        "canonical_url": "https://dev.to/amrutaranade/user-test-an-open-source-project-my-tech-writing-process-part-1-2kh9",
+        "comments_count": 1,
+        "positive_reactions_count": 8,
+        "published_timestamp": "2019-05-18T13:40:53Z",
+        "user": {
+            "name": "Amruta Ranade",
+            "username": "amrutaranade",
+            "twitter_username": "AmrutaRanade",
+            "github_username": "Amruta-Ranade",
+            "website_url": "https://t.co/XxALJ88D0k",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--kgwA9sdA--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/117224/99aa0b5e-4caa-4876-ba8d-c0e9f171cccd.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--CBiFFT9C--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/117224/99aa0b5e-4caa-4876-ba8d-c0e9f171cccd.jpeg"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 110076,
+        "title": "The most important skill a programmer can learn",
+        "description": "The best code is no code at all.",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--VrN7Kw1D--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://cdn-images-1.medium.com/max/1200/0%2AXG0c4KW0GKI5h3Sq",
+        "published_at": "2019-05-18T10:49:04.042Z",
+        "tag_list": [
+            "programming",
+            "webdev",
             "beginners",
-            "advice",
             "career"
         ],
-        "slug": "things-i-wish-i-knew-before-i-started-web-development-1eb8",
-        "path": "/flippedcoding/things-i-wish-i-knew-before-i-started-web-development-1eb8",
-        "url": "https://dev.to/flippedcoding/things-i-wish-i-knew-before-i-started-web-development-1eb8",
-        "canonical_url": "https://dev.to/flippedcoding/things-i-wish-i-knew-before-i-started-web-development-1eb8",
-        "comments_count": 1,
-        "positive_reactions_count": 39,
-        "published_timestamp": "2019-05-16T12:31:58Z",
-        "user": {
-            "name": "Milecia McG",
-            "username": "flippedcoding",
-            "twitter_username": "FlippedCoding",
-            "github_username": null,
-            "website_url": "https://flippedcoding.com",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--YrvUwlKO--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/77973/e340c1a3-7f0d-4230-a3ab-d58dc9bfba2c.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--U4fyUMGA--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/77973/e340c1a3-7f0d-4230-a3ab-d58dc9bfba2c.jpg"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 109098,
-        "title": "Building a chat app with React Hooks, a pragmatic example",
-        "description": "Use state and other React features without writing a class.",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--m81kVavH--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/lvsvw95hiewiv3j0tsf4.png",
-        "published_at": "2019-05-16T12:23:49.307Z",
-        "tag_list": [
-            "react",
-            "javascript",
-            "beginners"
-        ],
-        "slug": "building-a-chat-app-with-react-hooks-a-pragmatic-example-m46",
-        "path": "/nsebhastian/building-a-chat-app-with-react-hooks-a-pragmatic-example-m46",
-        "url": "https://dev.to/nsebhastian/building-a-chat-app-with-react-hooks-a-pragmatic-example-m46",
-        "canonical_url": "https://www.cometchat.com/tutorials/building-a-chat-app-with-react-hooks-a-pragmatic-example/",
+        "slug": "the-most-important-skill-a-programmer-can-learn-5gpf",
+        "path": "/h_polatyuruk/the-most-important-skill-a-programmer-can-learn-5gpf",
+        "url": "https://dev.to/h_polatyuruk/the-most-important-skill-a-programmer-can-learn-5gpf",
+        "canonical_url": "http://huseyinpolatyuruk.com/2019/05/03/the-most-important-skill-a-programmer-can-learn/",
         "comments_count": 0,
-        "positive_reactions_count": 27,
-        "published_timestamp": "2019-05-16T12:23:49Z",
+        "positive_reactions_count": 13,
+        "published_timestamp": "2019-05-18T10:49:04Z",
         "user": {
-            "name": "Nathan Sebhastian",
-            "username": "nsebhastian",
-            "twitter_username": "Nsebhastian",
-            "github_username": "nsebhastian",
-            "website_url": "https://sebhastian.com",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--fsfg2Tqe--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/84101/b4b5f174-477e-413a-a974-946d924d1048.png",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--OX4OMeGO--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/84101/b4b5f174-477e-413a-a974-946d924d1048.png"
+            "name": "Hüseyin Polat Yürük",
+            "username": "h_polatyuruk",
+            "twitter_username": "h_polatyuruk",
+            "github_username": null,
+            "website_url": "http://huseyinpolatyuruk.com/",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--sDxwvFQ5--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/118627/c2accf0f-6cd4-455e-a991-6418d4f3c720.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--YbIBT38S--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/118627/c2accf0f-6cd4-455e-a991-6418d4f3c720.jpg"
         }
     },
     {
         "type_of": "article",
-        "id": 109208,
-        "title": "Dart getters and setters",
-        "description": "\n  \n  \n  Prerequisites\n\n\nYou will need basic knowledge of\n\n\nDart\nObject-Oriented ...",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--NvB0RnfP--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--uF8k0Nte--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/ihd2w0v3ur4u6ufolm5p.png",
-        "published_at": "2019-05-16T11:24:23.899Z",
+        "id": 110081,
+        "title": "What you might not know about async/await",
+        "description": "A quick post detailing a common mistake when using async/await.",
+        "cover_image": null,
+        "published_at": "2019-05-18T11:13:42.989Z",
+        "tag_list": [
+            "webdev",
+            "javascript"
+        ],
+        "slug": "what-you-might-not-know-about-async-await-20bh",
+        "path": "/parkroolucas/what-you-might-not-know-about-async-await-20bh",
+        "url": "https://dev.to/parkroolucas/what-you-might-not-know-about-async-await-20bh",
+        "canonical_url": "https://dev.to/parkroolucas/what-you-might-not-know-about-async-await-20bh",
+        "comments_count": 0,
+        "positive_reactions_count": 8,
+        "published_timestamp": "2019-05-18T11:13:42Z",
+        "user": {
+            "name": "Lucas Chen",
+            "username": "parkroolucas",
+            "twitter_username": null,
+            "github_username": "parkroolucas",
+            "website_url": "https://codebetter.com.au",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--bYgcZepa--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/32735/394e74f9-2aa5-49dd-bd3a-bc414020691a.png",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--yA_TE158--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/32735/394e74f9-2aa5-49dd-bd3a-bc414020691a.png"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109061,
+        "title": "👶 New Baby! 👕New Shirt! 📙New AWS Course! Let's Celebrate with a  Special Deal!",
+        "description": "",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--rbox7cxm--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/8raeanc87ohsjrxwwp6f.png",
+        "published_at": "2019-05-18T02:00:07.686Z",
+        "tag_list": [
+            "news",
+            "aws",
+            "beginners",
+            "career"
+        ],
+        "slug": "new-baby-new-shirt-new-aws-course-let-s-celebrate-with-a-special-deal-3n1i",
+        "path": "/exampro/new-baby-new-shirt-new-aws-course-let-s-celebrate-with-a-special-deal-3n1i",
+        "url": "https://dev.to/exampro/new-baby-new-shirt-new-aws-course-let-s-celebrate-with-a-special-deal-3n1i",
+        "canonical_url": "https://dev.to/exampro/new-baby-new-shirt-new-aws-course-let-s-celebrate-with-a-special-deal-3n1i",
+        "comments_count": 7,
+        "positive_reactions_count": 38,
+        "published_timestamp": "2019-05-18T02:00:07Z",
+        "user": {
+            "name": "Andrew Brown 🇨🇦",
+            "username": "andrewbrown",
+            "twitter_username": null,
+            "github_username": "omenking",
+            "website_url": "https://www.exampro.co",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--rGHtB90b--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/108782/2916c48f-5e4b-489f-9a7b-00c32a4f0174.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s---d7EiGlL--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/108782/2916c48f-5e4b-489f-9a7b-00c32a4f0174.jpg"
+        },
+        "organization": {
+            "name": "ExamPro",
+            "username": "exampro",
+            "slug": "exampro",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--dQY9BkCj--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/626/cd978307-4684-4756-8cd3-74ada97b0c65.png",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--xhvbpBsH--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/626/cd978307-4684-4756-8cd3-74ada97b0c65.png"
+        },
+        "flare_tag": {
+            "name": "news",
+            "bg_color_hex": "#111111",
+            "text_color_hex": "#fff9ac"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109913,
+        "title": "Markdown + .NET = Interactive docs?",
+        "description": "Creating interactive .NET documentation",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--dXU8INFp--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/63cddcradm72ck2tdhhv.gif",
+        "published_at": "2019-05-17T18:38:39.215Z",
+        "tag_list": [
+            "c",
+            "net",
+            "webassembly",
+            "markdown"
+        ],
+        "slug": "markdown-net-interactive-docs-3ba2",
+        "path": "/ladynaggaga/markdown-net-interactive-docs-3ba2",
+        "url": "https://dev.to/ladynaggaga/markdown-net-interactive-docs-3ba2",
+        "canonical_url": "https://dev.to/ladynaggaga/markdown-net-interactive-docs-3ba2",
+        "comments_count": 0,
+        "positive_reactions_count": 54,
+        "published_timestamp": "2019-05-17T18:38:39Z",
+        "user": {
+            "name": "LadyNaggaga",
+            "username": "ladynaggaga",
+            "twitter_username": "LadyNaggaga",
+            "github_username": "LadyNaggaga",
+            "website_url": null,
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--8Km_T-GN--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/2626/2546640.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--bXMMFQHo--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/2626/2546640.jpeg"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 110019,
+        "title": "Aim to Never Stop Learning",
+        "description": "It's OK to not know everything. It's OK to be wrong.",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--UUOZ9ou0--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/7l8063akyshvmi2y8nou.jpg",
+        "published_at": "2019-05-18T02:20:10.153Z",
+        "tag_list": [
+            "learning",
+            "discuss"
+        ],
+        "slug": "aim-to-never-stop-learning-38ei",
+        "path": "/ashleemboyer/aim-to-never-stop-learning-38ei",
+        "url": "https://dev.to/ashleemboyer/aim-to-never-stop-learning-38ei",
+        "canonical_url": "https://dev.to/ashleemboyer/aim-to-never-stop-learning-38ei",
+        "comments_count": 19,
+        "positive_reactions_count": 40,
+        "published_timestamp": "2019-05-18T02:20:10Z",
+        "user": {
+            "name": "Ashlee Boyer",
+            "username": "ashleemboyer",
+            "twitter_username": "ashleemboyer",
+            "github_username": null,
+            "website_url": "https://ashleemboyer.com",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--_W_NaZtT--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/156486/028eb29d-dc91-4214-bd6b-95fc724092da.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--cKHrD0Nz--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/156486/028eb29d-dc91-4214-bd6b-95fc724092da.jpg"
+        },
+        "flare_tag": {
+            "name": "discuss",
+            "bg_color_hex": "#000000",
+            "text_color_hex": "#FFFFFF"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 108822,
+        "title": "GraphQL Code Generator",
+        "description": "Generate code out of your GraphQL schema with GraphQL Code Generator.",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--CfQqN7sv--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/aqmqdlvsjd4hiui3vyb2.png",
+        "published_at": "2019-05-17T14:14:48.353Z",
+        "tag_list": [
+            "graphql",
+            "beginners",
+            "webdev",
+            "showdev"
+        ],
+        "slug": "graphql-code-generator-2p3c",
+        "path": "/tomekponiat/graphql-code-generator-2p3c",
+        "url": "https://dev.to/tomekponiat/graphql-code-generator-2p3c",
+        "canonical_url": "https://dev.to/tomekponiat/graphql-code-generator-2p3c",
+        "comments_count": 0,
+        "positive_reactions_count": 52,
+        "published_timestamp": "2019-05-17T14:14:48Z",
+        "user": {
+            "name": "Tomek Poniatowicz",
+            "username": "tomekponiat",
+            "twitter_username": "TomPoniat",
+            "github_username": "tomekponiat",
+            "website_url": "https://graphqleditor.com/",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--gZtgr6Xl--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/125711/e1123abf-352e-4759-b1ac-b1a7637c2cb6.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--IyR_64JT--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/125711/e1123abf-352e-4759-b1ac-b1a7637c2cb6.jpg"
+        },
+        "flare_tag": {
+            "name": "showdev",
+            "bg_color_hex": "#091b47",
+            "text_color_hex": "#b2ffe1"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109870,
+        "title": "Understanding Java Objects, Abstract and Concrete",
+        "description": "Trying to understand Java's sprawl, one constructor at a time. ",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--tndFywTB--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://images.unsplash.com/photo-1542903660-eedba2cda473%3Fixlib%3Drb-1.2.1%26ixid%3DeyJhcHBfaWQiOjEyMDd9%26auto%3Dformat%26fit%3Dcrop%26w%3D1050%26q%3D80",
+        "published_at": "2019-05-17T13:46:02.235Z",
+        "tag_list": [
+            "beginners",
+            "java",
+            "oop"
+        ],
+        "slug": "understanding-java-objects-abstract-and-concrete-488a",
+        "path": "/martingaston/understanding-java-objects-abstract-and-concrete-488a",
+        "url": "https://dev.to/martingaston/understanding-java-objects-abstract-and-concrete-488a",
+        "canonical_url": "https://dev.to/martingaston/understanding-java-objects-abstract-and-concrete-488a",
+        "comments_count": 0,
+        "positive_reactions_count": 44,
+        "published_timestamp": "2019-05-17T13:46:02Z",
+        "user": {
+            "name": "Martin Gaston",
+            "username": "martingaston",
+            "twitter_username": null,
+            "github_username": "martingaston",
+            "website_url": "https://gaston.space",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--nvnB50Nw--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/164256/0776fbed-13e2-4a63-8338-e7985c565c98.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--HbLK5hy4--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/164256/0776fbed-13e2-4a63-8338-e7985c565c98.jpeg"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109263,
+        "title": "User Interfaces, Usability, and User Experience: The Square Milk Jug Edition",
+        "description": "How do UI design, usability, and user experience combine to impact your success?",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--vmiWopwI--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/i7oa53cfqaywueqil65q.jpg",
+        "published_at": "2019-05-17T20:00:36.132Z",
+        "tag_list": [
+            "ui",
+            "usability",
+            "ux",
+            "milk"
+        ],
+        "slug": "user-interfaces-usability-and-user-experience-the-square-milk-jug-edition-4ce5",
+        "path": "/billlenoir/user-interfaces-usability-and-user-experience-the-square-milk-jug-edition-4ce5",
+        "url": "https://dev.to/billlenoir/user-interfaces-usability-and-user-experience-the-square-milk-jug-edition-4ce5",
+        "canonical_url": "https://tenmilesquare.com/ui-usability-and-ux-the-square-milk-jug-edition/",
+        "comments_count": 0,
+        "positive_reactions_count": 13,
+        "published_timestamp": "2019-05-17T20:00:36Z",
+        "user": {
+            "name": "Bill Lenoir",
+            "username": "billlenoir",
+            "twitter_username": "BillLenoir",
+            "github_username": null,
+            "website_url": "https://bill-lenoir.com/",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--pakehTF---/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/162397/b96e0720-b917-4987-9b56-5bc04c9254f5.gif",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--vm3c-p1J--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/162397/b96e0720-b917-4987-9b56-5bc04c9254f5.gif"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109915,
+        "title": "Vue CLI ValidationError: webpack Dev Server Invalid Options",
+        "description": "In this article, I will tell you about an error I received while trying to run and new VueJS project this morning and how I was able to fix it.",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--Rf840452--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/tbfa9c98w96xji27kzvy.png",
+        "published_at": "2019-05-17T16:24:14.267Z",
+        "tag_list": [
+            "vue",
+            "npm",
+            "node",
+            "javascript"
+        ],
+        "slug": "vue-cli-validationerror-webpack-dev-server-invalid-options-361d",
+        "path": "/therealdanvega/vue-cli-validationerror-webpack-dev-server-invalid-options-361d",
+        "url": "https://dev.to/therealdanvega/vue-cli-validationerror-webpack-dev-server-invalid-options-361d",
+        "canonical_url": "https://www.danvega.dev/blog/2019/05/17/vue-cli-validation-error",
+        "comments_count": 1,
+        "positive_reactions_count": 12,
+        "published_timestamp": "2019-05-17T16:24:14Z",
+        "user": {
+            "name": "Dan Vega",
+            "username": "therealdanvega",
+            "twitter_username": "therealdanvega",
+            "github_username": "cfaddict",
+            "website_url": "https://www.danvega.me",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--DTxKd6OF--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/123336/befc7694-d0ab-46eb-801a-ed67a9258ad6.png",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--c4dUbJ6Z--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/123336/befc7694-d0ab-46eb-801a-ed67a9258ad6.png"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109863,
+        "title": "Cloudsmith + Rust = The World's First Private Cargo Registry Service",
+        "description": "Cloudsmith are proud to provide the World's first commercially available public and private Cargo registry hosting, with ultra-fast and secure delivery of your Rust packages, alongside all of the usual Enterprise-grade features that we provide.",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--inIwaK87--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/ukusvypbm51tu4hrmnr4.jpg",
+        "published_at": "2019-05-17T14:57:12.190Z",
+        "tag_list": [
+            "cloudsmith",
+            "rust",
+            "cargo",
+            "devops"
+        ],
+        "slug": "cloudsmith-rust-the-world-s-first-private-cargo-registry-service-2p18",
+        "path": "/cloudsmith/cloudsmith-rust-the-world-s-first-private-cargo-registry-service-2p18",
+        "url": "https://dev.to/cloudsmith/cloudsmith-rust-the-world-s-first-private-cargo-registry-service-2p18",
+        "canonical_url": "https://blog.cloudsmith.io/2019/05/01/worlds-first-private-cargo-registry/",
+        "comments_count": 0,
+        "positive_reactions_count": 12,
+        "published_timestamp": "2019-05-17T14:57:12Z",
+        "user": {
+            "name": "Cloudsmith",
+            "username": "cloudsmith",
+            "twitter_username": "cloudsmith",
+            "github_username": null,
+            "website_url": "https://cloudsmith.io",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--lro814Rp--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/136725/1c863071-60e9-42e2-97ec-c97344644726.png",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--3KB3BfXu--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/136725/1c863071-60e9-42e2-97ec-c97344644726.png"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109841,
+        "title": "Reinventing ruby flatten method",
+        "description": "tags: ruby,exercism,problem-solving, tdd, arrays, beginners",
+        "cover_image": null,
+        "published_at": "2019-05-17T10:30:43.417Z",
+        "tag_list": [],
+        "slug": "reinventing-ruby-flatten-method-4lpc",
+        "path": "/prosper/reinventing-ruby-flatten-method-4lpc",
+        "url": "https://dev.to/prosper/reinventing-ruby-flatten-method-4lpc",
+        "canonical_url": "https://dev.to/prosper/reinventing-ruby-flatten-method-4lpc",
+        "comments_count": 4,
+        "positive_reactions_count": 9,
+        "published_timestamp": "2019-05-17T10:30:43Z",
+        "user": {
+            "name": "Prosper Opara",
+            "username": "prosper",
+            "twitter_username": "Opara_Proser",
+            "github_username": "OPARA-PROSPER",
+            "website_url": null,
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--Fh4VhvOt--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/35082/29c5fb7d-fc4b-423a-8016-a69be46e88a0.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--goUD_cxu--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/35082/29c5fb7d-fc4b-423a-8016-a69be46e88a0.jpg"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109846,
+        "title": "On Glitch This Week",
+        "description": "Just a few projects that caught our eye this week on Glitch (May 15, 2019).",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--3to1e54T--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://cdn.glitch.com/02863ac1-a499-4a41-ac9c-41792950000f%252Fdev517Banner.png%3F1558090665252",
+        "published_at": "2019-05-17T11:06:30.375Z",
+        "tag_list": [
+            "glitch",
+            "glitchthisweek",
+            "showdev"
+        ],
+        "slug": "on-glitch-this-week-5mc",
+        "path": "/glitch/on-glitch-this-week-5mc",
+        "url": "https://dev.to/glitch/on-glitch-this-week-5mc",
+        "canonical_url": "https://glitch.com/@glitch/glitch-this-week-may-15-2019",
+        "comments_count": 2,
+        "positive_reactions_count": 12,
+        "published_timestamp": "2019-05-17T11:06:30Z",
+        "user": {
+            "name": "Gareth Wilson",
+            "username": "_gw",
+            "twitter_username": "_gw",
+            "github_username": null,
+            "website_url": "https://🤳🏼.ws",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--Z7_82glb--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/77467/9fed6514-bf0d-4b9e-b1c5-2894f0e424e3.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--BLG4Tv0J--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/77467/9fed6514-bf0d-4b9e-b1c5-2894f0e424e3.jpeg"
+        },
+        "organization": {
+            "name": "Glitch",
+            "username": "glitch",
+            "slug": "glitch",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--iBGJmvT0--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/609/d36daa95-5d60-4559-a0cd-f234d10ef61d.png",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--c3nGXAJy--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/609/d36daa95-5d60-4559-a0cd-f234d10ef61d.png"
+        },
+        "flare_tag": {
+            "name": "showdev",
+            "bg_color_hex": "#091b47",
+            "text_color_hex": "#b2ffe1"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109698,
+        "title": "Boring Flutter Project",
+        "description": "A collection of classic UI widget for Flutter.",
+        "cover_image": null,
+        "published_at": "2019-05-17T03:57:50.801Z",
         "tag_list": [
             "flutter",
-            "dart",
-            "getter",
-            "setter"
+            "widget"
         ],
-        "slug": "dart-getters-and-setters-1c8f",
-        "path": "/newtonmunene_yg/dart-getters-and-setters-1c8f",
-        "url": "https://dev.to/newtonmunene_yg/dart-getters-and-setters-1c8f",
-        "canonical_url": "https://dev.to/newtonmunene_yg/dart-getters-and-setters-1c8f",
+        "slug": "boring-flutter-project-5a33",
+        "path": "/xieweizhi/boring-flutter-project-5a33",
+        "url": "https://dev.to/xieweizhi/boring-flutter-project-5a33",
+        "canonical_url": "https://dev.to/xieweizhi/boring-flutter-project-5a33",
         "comments_count": 0,
-        "positive_reactions_count": 3,
-        "published_timestamp": "2019-05-16T11:24:23Z",
+        "positive_reactions_count": 9,
+        "published_timestamp": "2019-05-17T03:57:50Z",
         "user": {
-            "name": "Newton Munene",
-            "username": "newtonmunene_yg",
-            "twitter_username": "newtonmunene_yg",
-            "github_username": "newtonmunene99",
-            "website_url": "https://newtonmunene.netlify.com/",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--ZNZsi6i7--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/107273/5cba9816-f256-40d2-a518-0e8264238b8d.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--wpP5_NRl--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/107273/5cba9816-f256-40d2-a518-0e8264238b8d.jpg"
+            "name": "Weizhi Xie",
+            "username": "xieweizhi",
+            "twitter_username": null,
+            "github_username": "xieweizhi",
+            "website_url": null,
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--_KOlu_DG--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/118528/11d73ebb-3474-4961-b990-cff8a2f42406.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--6b_LpLbA--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/118528/11d73ebb-3474-4961-b990-cff8a2f42406.jpeg"
         }
     },
     {
         "type_of": "article",
-        "id": 108797,
-        "title": "Why your Open Source Project might lack (my?) contribution (1)",
-        "description": "\"In this article I describe some things to consider when maintaining ",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--zwhFCqaA--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/e16bybhakohspr763g8d.png",
-        "published_at": "2019-05-16T06:09:32.311Z",
+        "id": 109543,
+        "title": "Looking for beta testers for express-easy-routes",
+        "description": "",
+        "cover_image": null,
+        "published_at": "2019-05-16T22:22:23.351Z",
         "tag_list": [
-            "opensource",
-            "organisation",
-            "management"
+            "javascript",
+            "express",
+            "node",
+            "opensource"
         ],
-        "slug": "why-your-open-source-project-might-lack-my-contribution-1-4m8g",
-        "path": "/marcel_cremer/why-your-open-source-project-might-lack-my-contribution-1-4m8g",
-        "url": "https://dev.to/marcel_cremer/why-your-open-source-project-might-lack-my-contribution-1-4m8g",
-        "canonical_url": "https://marcel-cremer.de//opensource/",
-        "comments_count": 2,
+        "slug": "looking-for-beta-testers-for-express-easy-routes-2mhh",
+        "path": "/joelnet/looking-for-beta-testers-for-express-easy-routes-2mhh",
+        "url": "https://dev.to/joelnet/looking-for-beta-testers-for-express-easy-routes-2mhh",
+        "canonical_url": "https://dev.to/joelnet/looking-for-beta-testers-for-express-easy-routes-2mhh",
+        "comments_count": 0,
         "positive_reactions_count": 10,
-        "published_timestamp": "2019-05-16T06:09:32Z",
+        "published_timestamp": "2019-05-16T22:22:23Z",
         "user": {
-            "name": "Marcel Cremer",
-            "username": "marcel_cremer",
-            "twitter_username": "mcremer_en",
-            "github_username": null,
-            "website_url": "http://www.marcel-cremer.de",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--XdFpy2Mb--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/75922/93de41a4-6269-49d3-90cf-2640b7117bf7.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--68gDQRKu--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/75922/93de41a4-6269-49d3-90cf-2640b7117bf7.jpg"
+            "name": "JavaScript Joel",
+            "username": "joelnet",
+            "twitter_username": "joelnet",
+            "github_username": "joelnet",
+            "website_url": "http://joel.net",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--_JjjE93q--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/2416/ba54e7d3-3e6d-494c-95a8-6721d250a6de.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--juTTptCz--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/2416/ba54e7d3-3e6d-494c-95a8-6721d250a6de.jpg"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109657,
+        "title": "A quick update on the 3D multiplayer browser game's development",
+        "description": "A quick update on the 3D multiplayer browser game I'm making.",
+        "cover_image": null,
+        "published_at": "2019-05-17T00:39:02.612Z",
+        "tag_list": [
+            "gamedev",
+            "startup"
+        ],
+        "slug": "a-quick-update-on-the-3d-multiplayer-browser-game-s-development-3h68",
+        "path": "/webdva/a-quick-update-on-the-3d-multiplayer-browser-game-s-development-3h68",
+        "url": "https://dev.to/webdva/a-quick-update-on-the-3d-multiplayer-browser-game-s-development-3h68",
+        "canonical_url": "https://webdva.github.io/a-quick-update-on-the-3d-multiplayer-browser-games-development/",
+        "comments_count": 0,
+        "positive_reactions_count": 9,
+        "published_timestamp": "2019-05-17T00:39:02Z",
+        "user": {
+            "name": "Jermaine Easterling",
+            "username": "webdva",
+            "twitter_username": "webDva",
+            "github_username": "webDva",
+            "website_url": "https://webdva.github.io/",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--Dt4bz5oA--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/105381/34ad5dce-81ec-484f-850f-463da204bf05.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--Sjh5g7N6--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/105381/34ad5dce-81ec-484f-850f-463da204bf05.jpg"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109677,
+        "title": "Grails 4 Upgrade Notes",
+        "description": "",
+        "cover_image": null,
+        "published_at": "2019-05-17T03:17:12.748Z",
+        "tag_list": [
+            "grails",
+            "groovy",
+            "micronaut",
+            "webdev"
+        ],
+        "slug": "grails-4-upgrade-notes-3cja",
+        "path": "/erichelgeson/grails-4-upgrade-notes-3cja",
+        "url": "https://dev.to/erichelgeson/grails-4-upgrade-notes-3cja",
+        "canonical_url": "https://dev.to/erichelgeson/grails-4-upgrade-notes-3cja",
+        "comments_count": 0,
+        "positive_reactions_count": 9,
+        "published_timestamp": "2019-05-17T03:17:12Z",
+        "user": {
+            "name": "Eric Helgeson",
+            "username": "erichelgeson",
+            "twitter_username": "nulleric",
+            "github_username": "erichelgeson",
+            "website_url": "https://practicalgrails.com/",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--7dCChl4q--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/168361/c372198b-2005-4e5c-b48c-3f5dc8b9b17f.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--qKSH5ngk--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/168361/c372198b-2005-4e5c-b48c-3f5dc8b9b17f.jpeg"
         }
     },
     {
@@ -135,7 +572,7 @@
         "url": "https://dev.to/thekashey/reach-shallow-snapshot-506",
         "canonical_url": "https://dev.to/thekashey/reach-shallow-snapshot-506",
         "comments_count": 0,
-        "positive_reactions_count": 7,
+        "positive_reactions_count": 9,
         "published_timestamp": "2019-05-16T04:48:02Z",
         "user": {
             "name": "Anton Korzunov",
@@ -149,799 +586,322 @@
     },
     {
         "type_of": "article",
-        "id": 109066,
-        "title": "Surprising behavior with Rails I18n Lazy Lookups and Partials",
-        "description": " Do any of y'all know of a way to preserve the virtual path used in Rails I18n lazy lookup while using partials with blocks?",
-        "cover_image": null,
-        "published_at": "2019-05-16T02:12:53.663Z",
+        "id": 108535,
+        "title": "My Compiler is a Machinist",
+        "description": "The similarities between software development and mechanical engineering are bigger than you might think!  Both sides can learn some lessons from the other.",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--uOEtgRqb--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/cda0udzcgogw02lioxhh.png",
+        "published_at": "2019-05-14T15:31:46.803Z",
         "tag_list": [
-            "help",
-            "rails",
-            "i18n"
+            "mechanical",
+            "engineering"
         ],
-        "slug": "surprising-behavior-with-rails-i18n-lazy-lookups-and-partials-5g78",
-        "path": "/zspencer/surprising-behavior-with-rails-i18n-lazy-lookups-and-partials-5g78",
-        "url": "https://dev.to/zspencer/surprising-behavior-with-rails-i18n-lazy-lookups-and-partials-5g78",
-        "canonical_url": "https://dev.to/zspencer/surprising-behavior-with-rails-i18n-lazy-lookups-and-partials-5g78",
+        "slug": "my-compiler-is-a-machinist-54g6",
+        "path": "/rpalo/my-compiler-is-a-machinist-54g6",
+        "url": "https://dev.to/rpalo/my-compiler-is-a-machinist-54g6",
+        "canonical_url": "https://simpleprogrammer.com/lessons-from-mechanical-engineering/",
         "comments_count": 0,
-        "positive_reactions_count": 4,
-        "published_timestamp": "2019-05-16T02:12:53Z",
+        "positive_reactions_count": 11,
+        "published_timestamp": "2019-05-14T15:31:46Z",
         "user": {
-            "name": "Zee",
-            "username": "zspencer",
-            "twitter_username": "zspencer",
-            "github_username": "zspencer",
-            "website_url": "https://www.zeespencer.com/",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--pYVSmtY1--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/106105/8aa5facd-a2d4-4a7e-b331-8998a3acb3c4.jpeg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--dPOBsTve--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/106105/8aa5facd-a2d4-4a7e-b331-8998a3acb3c4.jpeg"
-        },
-        "flare_tag": {
-            "name": "help",
-            "bg_color_hex": "#EFFF96",
-            "text_color_hex": "#000000"
+            "name": "Ryan Palo",
+            "username": "rpalo",
+            "twitter_username": "paytastic",
+            "github_username": "rpalo",
+            "website_url": "https://assertnotmagic.com",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--Y19u_QeM--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/11355/14909201.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--PjEvE4_N--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/11355/14909201.jpeg"
         }
     },
     {
         "type_of": "article",
-        "id": 108759,
-        "title": "Spreading pipelines of components",
-        "description": "",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--QbTcwc31--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/yl8o5wjft4ruf5f3e3qs.jpg",
-        "published_at": "2019-05-15T18:02:29.438Z",
+        "id": 109510,
+        "title": "Git + GitHub Best Practices for Teams (Opinionated)",
+        "description": "A collection of thoughts on using Git to its fullest when working on a project team ",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--f7SnM2y7--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/8g5esyy2y11yjo8vuabn.png",
+        "published_at": "2019-05-16T19:50:13.820Z",
         "tag_list": [
-            "webdev",
-            "javascript",
-            "showdev",
-            "ui"
+            "git",
+            "beginners",
+            "github",
+            "bitsofgood"
         ],
-        "slug": "spreading-pipelines-of-components-1969",
-        "path": "/matsp/spreading-pipelines-of-components-1969",
-        "url": "https://dev.to/matsp/spreading-pipelines-of-components-1969",
-        "canonical_url": "https://dev.to/matsp/spreading-pipelines-of-components-1969",
-        "comments_count": 0,
-        "positive_reactions_count": 8,
-        "published_timestamp": "2019-05-15T18:02:29Z",
+        "slug": "git-github-best-practices-for-teams-opinionated-28h7",
+        "path": "/bholmesdev/git-github-best-practices-for-teams-opinionated-28h7",
+        "url": "https://dev.to/bholmesdev/git-github-best-practices-for-teams-opinionated-28h7",
+        "canonical_url": "https://dev.to/bholmesdev/git-github-best-practices-for-teams-opinionated-28h7",
+        "comments_count": 12,
+        "positive_reactions_count": 151,
+        "published_timestamp": "2019-05-16T19:50:13Z",
         "user": {
-            "name": "Mats Pfeiffer",
-            "username": "matsp",
-            "twitter_username": "MatsPfeiffer",
-            "github_username": "matsp",
-            "website_url": "https://matspfeiffer.dev",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--JaRneHaS--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/131161/bec61574-2827-4965-b386-fdd654dce395.jpeg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--eDg0HRB---/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/131161/bec61574-2827-4965-b386-fdd654dce395.jpeg"
-        },
-        "flare_tag": {
-            "name": "showdev",
-            "bg_color_hex": "#091b47",
-            "text_color_hex": "#b2ffe1"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108857,
-        "title": "I'm joining the DEV team",
-        "description": "Hi everyone, you've probably seen my name popping up around the website or the Gi...",
-        "cover_image": null,
-        "published_at": "2019-05-15T18:32:12.779Z",
-        "tag_list": [
-            "meta",
-            "career",
-            "personal"
-        ],
-        "slug": "i-m-joining-the-dev-team-3mi8",
-        "path": "/rhymes/i-m-joining-the-dev-team-3mi8",
-        "url": "https://dev.to/rhymes/i-m-joining-the-dev-team-3mi8",
-        "canonical_url": "https://dev.to/rhymes/i-m-joining-the-dev-team-3mi8",
-        "comments_count": 47,
-        "positive_reactions_count": 82,
-        "published_timestamp": "2019-05-15T18:32:12Z",
-        "user": {
-            "name": "rhymes",
-            "username": "rhymes",
-            "twitter_username": "rhymes_",
-            "github_username": "rhymes",
+            "name": "Ben Holmes",
+            "username": "bholmesdev",
+            "twitter_username": "BHolmesDev",
+            "github_username": "Holben888",
             "website_url": null,
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--qhCNe-v6--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/2693/146201.jpeg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--IQPhTQnb--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/2693/146201.jpeg"
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s---NywjFuz--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/142865/11a85a2c-15c6-4f5d-a017-cfe40bfc9d35.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--kHlzJjXB--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/142865/11a85a2c-15c6-4f5d-a017-cfe40bfc9d35.jpg"
         }
     },
     {
         "type_of": "article",
-        "id": 108520,
-        "title": "Joining the DEV team ✅",
-        "description": "Hey! If you follow the DEV repository news closely, you may have noticed that I'v...",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--bawL51dh--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--j0t2XV6a--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/dqn8h85ycyelr513gccj.jpg",
-        "published_at": "2019-05-15T18:33:14.220Z",
+        "id": 109848,
+        "title": "Folder Structure and Frameworks: What is exerting control?",
+        "description": "How you structure your code within a framework affects how you think about your system, what problems can this cause and can we solve them?",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--jqAFHYuk--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/85wt3i2k2zn9u6wep9id.jpg",
+        "published_at": "2019-05-17T11:31:11.874Z",
         "tag_list": [
-            "meta",
-            "career",
-            "personal"
+            "ddd",
+            "architecture",
+            "softwaredesign"
         ],
-        "slug": "joining-the-dev-team-1fg2",
-        "path": "/lightalloy/joining-the-dev-team-1fg2",
-        "url": "https://dev.to/lightalloy/joining-the-dev-team-1fg2",
-        "canonical_url": "https://dev.to/lightalloy/joining-the-dev-team-1fg2",
-        "comments_count": 13,
-        "positive_reactions_count": 79,
-        "published_timestamp": "2019-05-15T18:33:14Z",
+        "slug": "folder-structure-and-frameworks-what-is-exerting-control-4kpi",
+        "path": "/barryosull/folder-structure-and-frameworks-what-is-exerting-control-4kpi",
+        "url": "https://dev.to/barryosull/folder-structure-and-frameworks-what-is-exerting-control-4kpi",
+        "canonical_url": "https://dev.to/barryosull/folder-structure-and-frameworks-what-is-exerting-control-4kpi",
+        "comments_count": 1,
+        "positive_reactions_count": 42,
+        "published_timestamp": "2019-05-17T11:31:11Z",
         "user": {
-            "name": "Anna Buianova",
-            "username": "lightalloy",
-            "twitter_username": "lightalloy",
-            "github_username": "lightalloy",
-            "website_url": "http://litealloy.ru",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--DRRhBhNe--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/938/dca57f23-9f57-4346-a6b7-fcc6b4747890.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--LvMhTuOB--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/938/dca57f23-9f57-4346-a6b7-fcc6b4747890.jpg"
+            "name": "Barry O Sullivan",
+            "username": "barryosull",
+            "twitter_username": "barryosull",
+            "github_username": "barryosull",
+            "website_url": null,
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--lQ80s_wa--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/17829/130dc702-1fb9-4dfc-9151-138dbdd78095.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--qLjH4hGp--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/17829/130dc702-1fb9-4dfc-9151-138dbdd78095.jpg"
         }
     },
     {
         "type_of": "article",
-        "id": 108768,
-        "title": "Data Sources DOWN!",
-        "description": "Do you know that situation where you roam through the Terraform providers documen...",
+        "id": 109673,
+        "title": "Your first developer job hunt: it sucks and you’re not alone. Part 1",
+        "description": "Part 1 — All the Feels. A lot of blog posts talk about strategies on how to find ...",
         "cover_image": null,
-        "published_at": "2019-05-15T11:44:24.012Z",
+        "published_at": "2019-05-17T01:30:15.931Z",
         "tag_list": [
-            "terraform",
-            "documentation",
-            "fun"
+            "career",
+            "motivation",
+            "beginners"
         ],
-        "slug": "data-sources-down-28ai",
-        "path": "/dploeger/data-sources-down-28ai",
-        "url": "https://dev.to/dploeger/data-sources-down-28ai",
-        "canonical_url": "https://dev.to/dploeger/data-sources-down-28ai",
-        "comments_count": 0,
-        "positive_reactions_count": 6,
-        "published_timestamp": "2019-05-15T11:44:24Z",
+        "slug": "your-first-developer-job-hunt-it-sucks-and-you-re-not-alone-part-1-9g",
+        "path": "/tuni_tech/your-first-developer-job-hunt-it-sucks-and-you-re-not-alone-part-1-9g",
+        "url": "https://dev.to/tuni_tech/your-first-developer-job-hunt-it-sucks-and-you-re-not-alone-part-1-9g",
+        "canonical_url": "https://dev.to/tuni_tech/your-first-developer-job-hunt-it-sucks-and-you-re-not-alone-part-1-9g",
+        "comments_count": 9,
+        "positive_reactions_count": 66,
+        "published_timestamp": "2019-05-17T01:30:15Z",
         "user": {
-            "name": "Dennis Ploeger",
-            "username": "dploeger",
-            "twitter_username": "dploeger_it",
-            "github_username": "dploeger",
-            "website_url": "https://dennis.dieploegers.de",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--vSRZ1Rk8--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/80631/f3cf61af-191d-48c8-ab8e-4808595566c6.jpeg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--XyE5QQ4Y--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/80631/f3cf61af-191d-48c8-ab8e-4808595566c6.jpeg"
+            "name": "Tuni 🔑",
+            "username": "tuni_tech",
+            "twitter_username": "tuni_tech",
+            "github_username": null,
+            "website_url": null,
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--cfE84p7M--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/168416/df681b63-2c3c-415b-8560-f4f68a0d54a6.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--PSMQ8WjN--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/168416/df681b63-2c3c-415b-8560-f4f68a0d54a6.jpg"
         }
     },
     {
         "type_of": "article",
-        "id": 108583,
-        "title": "Firebase React Authentication Tutorial For Beginners - Private Route With Hooks",
-        "description": "Sometimes you just need to make a fast prototype and you don’t want to mess with back end, authentication, authorization and all of that. Here is where Google’s firebase can help you. In this tutorial I’ll show you how to connect your react app with Firebase authentication module.",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--_3h0UR5_--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/uvrwuh66fspf6rxm5rsk.png",
-        "published_at": "2019-05-15T18:12:58.606Z",
+        "id": 109492,
+        "title": "Folium : Powerful Mapping Tool for Absolute Beginners",
+        "description": "An introduction to Folium for brand-new python programmers",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--bhdT8Xe0--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://cdn-images-1.medium.com/max/1600/0%2AXh_hXsAZHu9etsRu",
+        "published_at": "2019-05-16T18:18:26.085Z",
         "tag_list": [
-            "firebase",
+            "datascience",
+            "visualization",
+            "python",
+            "beginners"
+        ],
+        "slug": "folium-powerful-mapping-tool-for-absolute-beginners-1m5h",
+        "path": "/lberlin/folium-powerful-mapping-tool-for-absolute-beginners-1m5h",
+        "url": "https://dev.to/lberlin/folium-powerful-mapping-tool-for-absolute-beginners-1m5h",
+        "canonical_url": "https://dev.to/lberlin/folium-powerful-mapping-tool-for-absolute-beginners-1m5h",
+        "comments_count": 3,
+        "positive_reactions_count": 40,
+        "published_timestamp": "2019-05-16T18:18:26Z",
+        "user": {
+            "name": "Lindsey",
+            "username": "lberlin",
+            "twitter_username": null,
+            "github_username": "lindseyberlin",
+            "website_url": "http://lindseyberlin.com",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--1aMALYqQ--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/163332/0c927ee9-7c73-4858-82f8-235084849ffc.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--AxCzYElt--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/163332/0c927ee9-7c73-4858-82f8-235084849ffc.jpg"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109434,
+        "title": "A practical guide to Javascript Proxy",
+        "description": "With Proxy, you get a tiger object disguised as a cat object. Here are about half a dozen examples that I hope will convince you that Proxy provides powerful metaprogramming in Javascript.",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--Lae8kQ0R--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/xd4sigm450ruom7odd31.jpeg",
+        "published_at": "2019-05-16T16:19:25.954Z",
+        "tag_list": [
+            "javascript",
+            "programming",
+            "webdev",
+            "software"
+        ],
+        "slug": "a-practical-guide-to-javascript-proxy-4cpa",
+        "path": "/tombarr/a-practical-guide-to-javascript-proxy-4cpa",
+        "url": "https://dev.to/tombarr/a-practical-guide-to-javascript-proxy-4cpa",
+        "canonical_url": "https://dev.to/tombarr/a-practical-guide-to-javascript-proxy-4cpa",
+        "comments_count": 1,
+        "positive_reactions_count": 75,
+        "published_timestamp": "2019-05-16T16:19:25Z",
+        "user": {
+            "name": "Thomas Barrasso",
+            "username": "tombarr",
+            "twitter_username": null,
+            "github_username": "Tombarr",
+            "website_url": "https://barrasso.me",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--dlOZqcpZ--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/150464/ef558b1d-0755-4447-add5-f4621facc39d.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--YSCIX4wD--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/150464/ef558b1d-0755-4447-add5-f4621facc39d.jpeg"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109550,
+        "title": "How to copy props in react dev tools",
+        "description": "",
+        "cover_image": null,
+        "published_at": "2019-05-16T23:25:16.298Z",
+        "tag_list": [
+            "todayisearched",
+            "todayilearned",
+            "reactdevtools",
             "react"
         ],
-        "slug": "firebase-react-authentication-tutorial-for-beginners-private-route-with-hooks-2ej4",
-        "path": "/satansdeer/firebase-react-authentication-tutorial-for-beginners-private-route-with-hooks-2ej4",
-        "url": "https://dev.to/satansdeer/firebase-react-authentication-tutorial-for-beginners-private-route-with-hooks-2ej4",
-        "canonical_url": "https://dev.to/satansdeer/firebase-react-authentication-tutorial-for-beginners-private-route-with-hooks-2ej4",
-        "comments_count": 0,
-        "positive_reactions_count": 63,
-        "published_timestamp": "2019-05-15T18:12:58Z",
-        "user": {
-            "name": "Maksim Ivanov",
-            "username": "satansdeer",
-            "twitter_username": "SatansDeer",
-            "github_username": "satansdeer",
-            "website_url": "http://maksimivanov.com",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--UxDnh9c9--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/45906/54eef4c9-21ea-491b-b684-dd2d59fe28b0.jpeg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--GeGwyD-B--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/45906/54eef4c9-21ea-491b-b684-dd2d59fe28b0.jpeg"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108808,
-        "title": "What are your five most used terminal commands?",
-        "description": "community post to share our most used terminal commands.",
-        "cover_image": null,
-        "published_at": "2019-05-15T12:59:49.000Z",
-        "tag_list": [
-            "linux",
-            "terminal",
-            "unix",
-            "discuss"
-        ],
-        "slug": "what-are-your-five-most-used-terminal-commands-1hmd",
-        "path": "/ecologic/what-are-your-five-most-used-terminal-commands-1hmd",
-        "url": "https://dev.to/ecologic/what-are-your-five-most-used-terminal-commands-1hmd",
-        "canonical_url": "https://dev.to/ecologic/what-are-your-five-most-used-terminal-commands-1hmd",
-        "comments_count": 42,
-        "positive_reactions_count": 66,
-        "published_timestamp": "2019-05-15T12:59:49Z",
-        "user": {
-            "name": "M. Langhard",
-            "username": "riscie",
-            "twitter_username": "Langhard",
-            "github_username": null,
-            "website_url": "http://www.ecologic.ch",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--Bm4cBv1B--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/4301/3ec18c53-3c66-4e69-af53-41bfd6d21e4d.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--2xUXGega--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/4301/3ec18c53-3c66-4e69-af53-41bfd6d21e4d.jpg"
-        },
-        "organization": {
-            "name": "EcoLogic",
-            "username": "ecologic",
-            "slug": "ecologic",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--BZEmLpI7--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/733/434c65fa-f905-4ef8-9652-a945d5f449ce.png",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--DJGQ90oG--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/733/434c65fa-f905-4ef8-9652-a945d5f449ce.png"
-        },
-        "flare_tag": {
-            "name": "discuss",
-            "bg_color_hex": "#000000",
-            "text_color_hex": "#FFFFFF"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108799,
-        "title": "Styled components: what, why and how?",
-        "description": "A great way of styling your React projects",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--vUem2qFz--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://repository-images.githubusercontent.com/65794292/bdacfa80-6132-11e9-90b9-33e6eee04d1f",
-        "published_at": "2019-05-15T12:28:54.197Z",
-        "tag_list": [
-            "beginners",
-            "react",
-            "webdev",
-            "tutorial"
-        ],
-        "slug": "styled-component-what-why-and-how-5gh3",
-        "path": "/christopherkade/styled-component-what-why-and-how-5gh3",
-        "url": "https://dev.to/christopherkade/styled-component-what-why-and-how-5gh3",
-        "canonical_url": "https://dev.to/christopherkade/styled-component-what-why-and-how-5gh3",
-        "comments_count": 7,
-        "positive_reactions_count": 67,
-        "published_timestamp": "2019-05-15T12:28:54Z",
-        "user": {
-            "name": "Christopher Kade",
-            "username": "christopherkade",
-            "twitter_username": "christo_kade",
-            "github_username": "christopherkade",
-            "website_url": "https://christopherkade.com",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--xmdVVNIG--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/55600/54384145-c64e-4709-a869-7a8e1c1c54f4.JPG",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--_FsPGL7Y--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/55600/54384145-c64e-4709-a869-7a8e1c1c54f4.JPG"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108677,
-        "title": "Throw All of your Email Subscriptions in the Garbage",
-        "description": "Who cares about inbox zero? Just get rid of all the crap you don't even read.",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--IMKxIzbH--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/392zldjmmhtrdqx650ts.jpg",
-        "published_at": "2019-05-15T23:40:20.708Z",
-        "tag_list": [
-            "productivity",
-            "email",
-            "subscriptions"
-        ],
-        "slug": "throw-all-of-your-email-subscriptions-in-the-garbage-25ah",
-        "path": "/ashleemboyer/throw-all-of-your-email-subscriptions-in-the-garbage-25ah",
-        "url": "https://dev.to/ashleemboyer/throw-all-of-your-email-subscriptions-in-the-garbage-25ah",
-        "canonical_url": "https://dev.to/ashleemboyer/throw-all-of-your-email-subscriptions-in-the-garbage-25ah",
-        "comments_count": 13,
-        "positive_reactions_count": 35,
-        "published_timestamp": "2019-05-15T23:40:20Z",
-        "user": {
-            "name": "Ashlee Boyer",
-            "username": "ashleemboyer",
-            "twitter_username": "ashleemboyer",
-            "github_username": null,
-            "website_url": "https://ashleemboyer.com",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--_W_NaZtT--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/156486/028eb29d-dc91-4214-bd6b-95fc724092da.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--cKHrD0Nz--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/156486/028eb29d-dc91-4214-bd6b-95fc724092da.jpg"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 107889,
-        "title": "How a Newbie Ended Up Creating a Popular SDV Mod",
-        "description": "The story of how the development of a small project became my most valuable learning experience",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--L0N2vQC---/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/53so5102viigxt93ap0q.png",
-        "published_at": "2019-05-15T17:52:53.338Z",
-        "tag_list": [
-            "beginners",
-            "learning",
-            "sideprojects",
-            "gamedev"
-        ],
-        "slug": "how-a-newbie-ended-up-creating-a-popular-sdv-mod-1mi9",
-        "path": "/bouhm/how-a-newbie-ended-up-creating-a-popular-sdv-mod-1mi9",
-        "url": "https://dev.to/bouhm/how-a-newbie-ended-up-creating-a-popular-sdv-mod-1mi9",
-        "canonical_url": "https://dev.to/bouhm/how-a-newbie-ended-up-creating-a-popular-sdv-mod-1mi9",
+        "slug": "how-to-copy-props-in-react-dev-tools-7d7",
+        "path": "/fannyvieira/how-to-copy-props-in-react-dev-tools-7d7",
+        "url": "https://dev.to/fannyvieira/how-to-copy-props-in-react-dev-tools-7d7",
+        "canonical_url": "https://dev.to/fannyvieira/how-to-copy-props-in-react-dev-tools-7d7",
         "comments_count": 9,
-        "positive_reactions_count": 52,
-        "published_timestamp": "2019-05-15T17:52:53Z",
+        "positive_reactions_count": 15,
+        "published_timestamp": "2019-05-16T23:25:16Z",
         "user": {
-            "name": "Brian Pak",
-            "username": "bouhm",
-            "twitter_username": "bbouhm",
-            "github_username": "Bouhm",
+            "name": "Fanny",
+            "username": "fannyvieira",
+            "twitter_username": "fannyvieiira",
+            "github_username": "fanny",
             "website_url": null,
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--kO3GzoQm--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/141454/85c7899e-9489-4d56-8b0d-81a581c07119.png",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--wTUnnqO0--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/141454/85c7899e-9489-4d56-8b0d-81a581c07119.png"
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--2W9tSxLx--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/18418/7f24455f-3216-4ac2-9c8e-8592a84915e4.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--B9ckfdyg--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/18418/7f24455f-3216-4ac2-9c8e-8592a84915e4.jpeg"
         }
     },
     {
         "type_of": "article",
-        "id": 107646,
-        "title": "Level Up Your Ruby Skillz: Working With Hashes",
-        "description": "A guide to some of the most useful methods for working with hashes in Ruby. ",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--9NXk2ANj--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/mzw3m333dkffu4jovm3v.png",
-        "published_at": "2019-05-15T12:06:48.581Z",
+        "id": 109505,
+        "title": "CSS Flexbox Nav Bar - Building a Blog, Part 1",
+        "description": "Flexbox Layout of a Blog Feature by Feature ",
+        "cover_image": null,
+        "published_at": "2019-05-16T18:32:21.809Z",
         "tag_list": [
-            "ruby",
-            "beginners",
-            "tips",
-            "tutorial"
+            "css",
+            "webdev",
+            "flexbox"
         ],
-        "slug": "level-up-your-ruby-skillz-working-with-hashes-4bid",
-        "path": "/molly_struve/level-up-your-ruby-skillz-working-with-hashes-4bid",
-        "url": "https://dev.to/molly_struve/level-up-your-ruby-skillz-working-with-hashes-4bid",
-        "canonical_url": "https://dev.to/molly_struve/level-up-your-ruby-skillz-working-with-hashes-4bid",
-        "comments_count": 3,
-        "positive_reactions_count": 61,
-        "published_timestamp": "2019-05-15T12:06:48Z",
+        "slug": "flexbox-blog-part-1-the-nav-bar-442l",
+        "path": "/njericooper/flexbox-blog-part-1-the-nav-bar-442l",
+        "url": "https://dev.to/njericooper/flexbox-blog-part-1-the-nav-bar-442l",
+        "canonical_url": "https://dev.to/njericooper/flexbox-blog-part-1-the-nav-bar-442l",
+        "comments_count": 0,
+        "positive_reactions_count": 47,
+        "published_timestamp": "2019-05-16T18:32:21Z",
         "user": {
-            "name": "Molly Struve",
-            "username": "molly_struve",
-            "twitter_username": "molly_struve",
-            "github_username": "mstruve",
-            "website_url": "https://www.mollystruve.com",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--UrIkLrxe--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/119473/9e74ee0e-f472-4c33-bfb4-79937e51f766.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--apWeHy1C--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/119473/9e74ee0e-f472-4c33-bfb4-79937e51f766.jpg"
+            "name": "Njeri Cooper",
+            "username": "njericooper",
+            "twitter_username": "njericooper",
+            "github_username": "njericooper",
+            "website_url": null,
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--u6p-Okzv--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/146740/4594f8c8-9c70-4b62-9053-0b7797fd3459.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--rfYkxuwx--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/146740/4594f8c8-9c70-4b62-9053-0b7797fd3459.jpg"
         }
     },
     {
         "type_of": "article",
-        "id": 108871,
-        "title": "Creating a Simple Contacts List with Go and PostgreSQL",
-        "description": "In this post, we will build a simple web page containing a contacts list, with th...",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--79ZY-7Vn--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--MynakjEZ--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/tt8yotnxv41g6669rtdd.png",
-        "published_at": "2019-05-15T17:00:33.301Z",
+        "id": 109682,
+        "title": "Absolute Security with No Trust",
+        "description": "",
+        "cover_image": null,
+        "published_at": "2019-05-17T02:35:39.306Z",
+        "tag_list": [
+            "security",
+            "cryptography"
+        ],
+        "slug": "absolute-security-with-no-trust-p55",
+        "path": "/_aafshar_/absolute-security-with-no-trust-p55",
+        "url": "https://dev.to/_aafshar_/absolute-security-with-no-trust-p55",
+        "canonical_url": "https://arash-afshar.github.io/absolute-security-with-no-trust/",
+        "comments_count": 2,
+        "positive_reactions_count": 17,
+        "published_timestamp": "2019-05-17T02:35:39Z",
+        "user": {
+            "name": "Arash Afshar",
+            "username": "_aafshar_",
+            "twitter_username": null,
+            "github_username": "Arash-Afshar",
+            "website_url": "https://arash-afshar.github.io/",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--CQcXNbUK--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/168413/da2bbb08-2854-4203-899e-4d2cc0ad5716.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--Sx0ZrCQD--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/168413/da2bbb08-2854-4203-899e-4d2cc0ad5716.jpeg"
+        }
+    },
+    {
+        "type_of": "article",
+        "id": 109679,
+        "title": "Leveraging the Layer-cake design in Go",
+        "description": "Layer-cake design creates a clean, modular, and maintainable design.",
+        "cover_image": null,
+        "published_at": "2019-05-17T02:31:19.131Z",
         "tag_list": [
             "go",
-            "postgresql",
-            "sql",
-            "webdev"
+            "multithreading"
         ],
-        "slug": "creating-a-simple-contacts-list-with-go-and-postgresql-1f45",
-        "path": "/digitalocean/creating-a-simple-contacts-list-with-go-and-postgresql-1f45",
-        "url": "https://dev.to/digitalocean/creating-a-simple-contacts-list-with-go-and-postgresql-1f45",
-        "canonical_url": "https://blog.digitalocean.com/create-a-simple-contacts-list-with-go/",
-        "comments_count": 0,
-        "positive_reactions_count": 59,
-        "published_timestamp": "2019-05-15T17:00:33Z",
-        "user": {
-            "name": "Kamal Nasser",
-            "username": "kamaln7",
-            "twitter_username": "kamaln7",
-            "github_username": null,
-            "website_url": "https://kamal.io",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--k5vqDhrL--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/90310/aba3cb52-0477-4229-8656-e02ab4ad8a50.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--txf_8g3F--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/90310/aba3cb52-0477-4229-8656-e02ab4ad8a50.jpg"
-        },
-        "organization": {
-            "name": "DigitalOcean",
-            "username": "digitalocean",
-            "slug": "digitalocean",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--fn8qWaeW--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/175/369f1227-0eac-4a88-8d3c-08851bf0b117.png",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--84xPH4TF--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/175/369f1227-0eac-4a88-8d3c-08851bf0b117.png"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108872,
-        "title": "How I offboard myself when leaving a job (with gifs!)",
-        "description": "Knowing what and how to leave a job is a difficult skill. This is my personal checklist for leaving on good terms and with all my stuff.",
-        "cover_image": null,
-        "published_at": "2019-05-15T17:49:48.389Z",
-        "tag_list": [
-            "offboarding",
-            "job",
-            "gifs"
-        ],
-        "slug": "how-i-offboard-myself-when-leaving-a-job-with-gifs-1k64",
-        "path": "/geekgalgroks/how-i-offboard-myself-when-leaving-a-job-with-gifs-1k64",
-        "url": "https://dev.to/geekgalgroks/how-i-offboard-myself-when-leaving-a-job-with-gifs-1k64",
-        "canonical_url": "https://dev.to/geekgalgroks/how-i-offboard-myself-when-leaving-a-job-with-gifs-1k64",
-        "comments_count": 1,
-        "positive_reactions_count": 35,
-        "published_timestamp": "2019-05-15T17:49:48Z",
-        "user": {
-            "name": "Jenn",
-            "username": "geekgalgroks",
-            "twitter_username": "geekgalgroks",
-            "github_username": null,
-            "website_url": "https://solderingwithjenn.com/",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--Ec7anlLF--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/6197/gf_gDTGz.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--_80X4glF--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/6197/gf_gDTGz.jpg"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108825,
-        "title": "The #DevDiscuss Community Talk Digital Health and Addiction",
-        "description": "The Dev.To community chatted about how they manage digital addiction. In case you missed it, here are the big takeaways!",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--BO5iq4Ua--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/n9m8mvt15bvagh9q5eo8.jpg",
-        "published_at": "2019-05-15T16:50:10.317Z",
-        "tag_list": [
-            "twitter",
-            "productivity",
-            "career",
-            "discuss"
-        ],
-        "slug": "the-devdiscuss-community-talk-digital-health-and-addiction-139j",
-        "path": "/maxwell_dev/the-devdiscuss-community-talk-digital-health-and-addiction-139j",
-        "url": "https://dev.to/maxwell_dev/the-devdiscuss-community-talk-digital-health-and-addiction-139j",
-        "canonical_url": "https://dev.to/maxwell_dev/the-devdiscuss-community-talk-digital-health-and-addiction-139j",
-        "comments_count": 2,
-        "positive_reactions_count": 38,
-        "published_timestamp": "2019-05-15T16:50:10Z",
-        "user": {
-            "name": "Max Antonucci",
-            "username": "maxwell_dev",
-            "twitter_username": "Maxwell_Dev",
-            "github_username": "maxx1128",
-            "website_url": "http://maxwellantonucci.com/",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--56CVZ_Ex--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/1621/34f13713-3663-4929-a670-7fb6eec62fbb.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--q6bDq30P--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/1621/34f13713-3663-4929-a670-7fb6eec62fbb.jpg"
-        },
-        "flare_tag": {
-            "name": "discuss",
-            "bg_color_hex": "#000000",
-            "text_color_hex": "#FFFFFF"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108147,
-        "title": "Fixing Bad Habits By Learning To Love Them: Agile Retrospectives",
-        "description": "Have you ever slipped? Were you seeing positive progress with your Agile team at ...",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--gNPXU19d--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://i0.wp.com/cubiclebuddha.com/wp-content/uploads/2019/05/img_9898.jpg%3Fzoom%3D2%26resize%3D375%252C232%26ssl%3D1",
-        "published_at": "2019-05-13T11:18:06.000Z",
-        "tag_list": [
-            "beginners",
-            "productivity",
-            "career",
-            "explainlikeimfive"
-        ],
-        "slug": "fixing-bad-habits-by-learning-to-love-them-agile-retrospectives-1o2g",
-        "path": "/cubiclebuddha/fixing-bad-habits-by-learning-to-love-them-agile-retrospectives-1o2g",
-        "url": "https://dev.to/cubiclebuddha/fixing-bad-habits-by-learning-to-love-them-agile-retrospectives-1o2g",
-        "canonical_url": "https://cubiclebuddha.com/fixing-bad-habits-by-learning-to-love-them-agile-retrospectives/",
-        "comments_count": 0,
-        "positive_reactions_count": 39,
-        "published_timestamp": "2019-05-15T16:31:18Z",
-        "user": {
-            "name": "Cubicle Buddha",
-            "username": "cubiclebuddha",
-            "twitter_username": "cubiclebuddha",
-            "github_username": null,
-            "website_url": "https://cubiclebuddha.com",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--tvrWrKQw--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/153909/2d2a009c-aba7-491d-bd87-6451d6733ddd.jpeg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--Y-CGlPlO--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/153909/2d2a009c-aba7-491d-bd87-6451d6733ddd.jpeg"
-        },
-        "flare_tag": {
-            "name": "explainlikeimfive",
-            "bg_color_hex": "#44474c",
-            "text_color_hex": "#e8eaed"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 107172,
-        "title": "The Curious Case of nvarchar and varchar in Entity Framework",
-        "description": "",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--i3i8iv5V--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://blog.kylegalbraith.com/static/1bede859d8c16000d6bf40979a1226f8/e7401/the-curious-case-of-nvarchar-and-varchar-in-entity-framework.webp",
-        "published_at": "2019-05-15T22:01:59.563Z",
-        "tag_list": [
-            "csharp",
-            "dotnet",
-            "sql",
-            "showdev"
-        ],
-        "slug": "the-curious-case-of-nvarchar-and-varchar-in-entity-framework-9nj",
-        "path": "/kylegalbraith/the-curious-case-of-nvarchar-and-varchar-in-entity-framework-9nj",
-        "url": "https://dev.to/kylegalbraith/the-curious-case-of-nvarchar-and-varchar-in-entity-framework-9nj",
-        "canonical_url": "https://blog.kylegalbraith.com/2019/05/15/the-curious-case-of-nvarchar-and-varchar-in-entity-framework/",
+        "slug": "leveraging-the-layer-cake-design-in-go-45ci",
+        "path": "/virepri/leveraging-the-layer-cake-design-in-go-45ci",
+        "url": "https://dev.to/virepri/leveraging-the-layer-cake-design-in-go-45ci",
+        "canonical_url": "https://dev.to/virepri/leveraging-the-layer-cake-design-in-go-45ci",
         "comments_count": 3,
-        "positive_reactions_count": 10,
-        "published_timestamp": "2019-05-15T22:01:59Z",
+        "positive_reactions_count": 15,
+        "published_timestamp": "2019-05-17T02:31:19Z",
         "user": {
-            "name": "Kyle Galbraith",
-            "username": "kylegalbraith",
-            "twitter_username": "kylegalbraith",
-            "github_username": "kylegalbraith",
-            "website_url": "https://www.kylegalbraith.com/learn-aws/",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--O6gs3mTg--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/32075/cd3410fa-21db-45fe-b9b8-5ecfcba3dab3.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--CzR5aDTb--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/32075/cd3410fa-21db-45fe-b9b8-5ecfcba3dab3.jpg"
-        },
-        "flare_tag": {
-            "name": "showdev",
-            "bg_color_hex": "#091b47",
-            "text_color_hex": "#b2ffe1"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108865,
-        "title": "I Am an Internet Urban Legend From the 90s, Ask Me Anything!",
-        "description": "I am the most famous employee McDonald's never had.\n\nI started a humor blog in 19...",
-        "cover_image": null,
-        "published_at": "2019-05-15T16:09:42.706Z",
-        "tag_list": [
-            "ama"
-        ],
-        "slug": "i-am-an-internet-urban-legend-from-the-90s-ask-me-anything-1fd5",
-        "path": "/yiddishninja/i-am-an-internet-urban-legend-from-the-90s-ask-me-anything-1fd5",
-        "url": "https://dev.to/yiddishninja/i-am-an-internet-urban-legend-from-the-90s-ask-me-anything-1fd5",
-        "canonical_url": "https://dev.to/yiddishninja/i-am-an-internet-urban-legend-from-the-90s-ask-me-anything-1fd5",
-        "comments_count": 19,
-        "positive_reactions_count": 38,
-        "published_timestamp": "2019-05-15T16:09:42Z",
-        "user": {
-            "name": "Greg Bulmash 🥑",
-            "username": "yiddishninja",
-            "twitter_username": "YiddishNinja",
-            "github_username": "YiddishNinja",
-            "website_url": "https://Yiddish.Ninja",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--BKQlLRL4--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/165250/c5292b20-e05d-4d4a-9e86-882b7a89b074.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--Um5DOL_3--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/165250/c5292b20-e05d-4d4a-9e86-882b7a89b074.jpg"
-        },
-        "flare_tag": {
-            "name": "ama",
-            "bg_color_hex": "#1395B8",
-            "text_color_hex": "#FFFFFF"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 109028,
-        "title": "I'm launching Almighty - powerful configurations for macOS",
-        "description": "",
-        "cover_image": null,
-        "published_at": "2019-05-15T20:28:10.878Z",
-        "tag_list": [
-            "macos",
-            "swift"
-        ],
-        "slug": "i-m-launching-almighty-powerful-configurations-for-macos-4oci",
-        "path": "/onmyway133/i-m-launching-almighty-powerful-configurations-for-macos-4oci",
-        "url": "https://dev.to/onmyway133/i-m-launching-almighty-powerful-configurations-for-macos-4oci",
-        "canonical_url": "https://dev.to/onmyway133/i-m-launching-almighty-powerful-configurations-for-macos-4oci",
-        "comments_count": 3,
-        "positive_reactions_count": 16,
-        "published_timestamp": "2019-05-15T20:28:10Z",
-        "user": {
-            "name": "Khoa Pham",
-            "username": "onmyway133",
-            "twitter_username": "onmyway133",
-            "github_username": "onmyway133",
-            "website_url": "https://onmyway133.github.io/",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--BsMe1xn1--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/20120/f6355e24-68e5-42a1-bf8f-07dcb87e14b5.jpeg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--4cdbfcM4--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/20120/f6355e24-68e5-42a1-bf8f-07dcb87e14b5.jpeg"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108862,
-        "title": "Motivation to Code",
-        "description": "Finding motivation to code and work on projects while working full time in a different field.",
-        "cover_image": null,
-        "published_at": "2019-05-15T16:56:29.020Z",
-        "tag_list": [
-            "motivation",
-            "beginners",
-            "codenewbie",
-            "womenintech"
-        ],
-        "slug": "motivation-to-code-53km",
-        "path": "/rachelgroff176/motivation-to-code-53km",
-        "url": "https://dev.to/rachelgroff176/motivation-to-code-53km",
-        "canonical_url": "https://dev.to/rachelgroff176/motivation-to-code-53km",
-        "comments_count": 4,
-        "positive_reactions_count": 43,
-        "published_timestamp": "2019-05-15T16:56:29Z",
-        "user": {
-            "name": "Rachel Groff",
-            "username": "rachelgroff176",
-            "twitter_username": "rachelgroff176",
-            "github_username": "rachelgroff176",
+            "name": "Adele Reed",
+            "username": "virepri",
+            "twitter_username": null,
+            "github_username": "Virepri",
             "website_url": null,
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--rJHPOwDF--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/157404/5d09960e-de60-4e36-ad2b-60aed1d1f6f3.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--eWO91kPC--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/157404/5d09960e-de60-4e36-ad2b-60aed1d1f6f3.jpg"
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--1U4PzId2--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/151144/922083a6-373b-41ee-88b9-edbb11c4391a.jpeg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--q6iAzRgn--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/151144/922083a6-373b-41ee-88b9-edbb11c4391a.jpeg"
         }
     },
     {
         "type_of": "article",
-        "id": 98237,
-        "title": "Steps to Building Authentication and Authorization For GraphQL APIs",
-        "description": "How to authenticate users and check their permissions in a GraphQL API",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--Q0_zYYwA--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/s1jmfvfm6exnb8edxe84.jpg",
-        "published_at": "2019-05-15T10:49:47.585Z",
+        "id": 109287,
+        "title": "Are you the lonely DevOps engineer doing 24/7 on-call? Change it!",
+        "description": "Are you the only one in your team who takes responsibility for the productive sys...",
+        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--CHXOO0Ad--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--E6UYc_cW--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://thepracticaldev.s3.amazonaws.com/i/st8ryidsnyhu266ec87p.jpg",
+        "published_at": "2019-05-16T14:54:59.599Z",
         "tag_list": [
-            "api",
-            "graphql"
+            "devops",
+            "oncall",
+            "sre"
         ],
-        "slug": "steps-to-building-authentication-and-authorization-for-graphql-apis-2c6e",
-        "path": "/moesif/steps-to-building-authentication-and-authorization-for-graphql-apis-2c6e",
-        "url": "https://dev.to/moesif/steps-to-building-authentication-and-authorization-for-graphql-apis-2c6e",
-        "canonical_url": "https://www.moesif.com/blog/technical/api-design/Steps-to-Building-Authentication-and-Authorization-For-GraphQL-APIs/",
-        "comments_count": 0,
-        "positive_reactions_count": 35,
-        "published_timestamp": "2019-05-15T10:49:47Z",
-        "user": {
-            "name": "K",
-            "username": "kayis",
-            "twitter_username": "K4y1s",
-            "github_username": "kay-is",
-            "website_url": "http://kay.is",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--w2HvuJpU--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/1106/fa9b99d9-ebce-4ea7-9b05-478b270aae54.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--VShzTvi6--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/1106/fa9b99d9-ebce-4ea7-9b05-478b270aae54.jpg"
-        },
-        "organization": {
-            "name": "moesif",
-            "username": "moesif",
-            "slug": "moesif",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--swpYefkw--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/558/c43388af-9345-4190-9d2e-3c336a2d393a.png",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--jFsqGMr6--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/558/c43388af-9345-4190-9d2e-3c336a2d393a.png"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108875,
-        "title": "Tired of Programming?",
-        "description": "A few weeks ago I was called up to do a data acquisition (DAQ) job. The moment my...",
-        "cover_image": null,
-        "published_at": "2019-05-15T16:51:56.172Z",
-        "tag_list": [
-            "oop",
-            "beginners",
-            "architecture"
-        ],
-        "slug": "tired-of-programming-4k85",
-        "path": "/engrumair/tired-of-programming-4k85",
-        "url": "https://dev.to/engrumair/tired-of-programming-4k85",
-        "canonical_url": "https://dev.to/engrumair/tired-of-programming-4k85",
+        "slug": "are-you-the-lonely-devops-engineer-doing-24-7-on-call-change-it-p1i",
+        "path": "/andreaswittig/are-you-the-lonely-devops-engineer-doing-24-7-on-call-change-it-p1i",
+        "url": "https://dev.to/andreaswittig/are-you-the-lonely-devops-engineer-doing-24-7-on-call-change-it-p1i",
+        "canonical_url": "https://marbot.io/blog/are-you-the-lonely-devops-engineer-doing-247-on-call-change-it.html",
         "comments_count": 1,
         "positive_reactions_count": 33,
-        "published_timestamp": "2019-05-15T16:51:56Z",
+        "published_timestamp": "2019-05-16T14:54:59Z",
         "user": {
-            "name": "Muhammad",
-            "username": "engrumair",
-            "twitter_username": null,
-            "github_username": "engrumair",
-            "website_url": null,
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--a1J8-Gls--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/167938/00cda5dd-7ca0-4174-9425-787f40e8d3f5.jpeg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--lpsQEhm9--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/167938/00cda5dd-7ca0-4174-9425-787f40e8d3f5.jpeg"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 105993,
-        "title": "Pushing Left, Like a Boss — Part 5.2 — Use Safe Dependencies",
-        "description": "The 5th section of this series details various examples of secure coding.",
-        "cover_image": null,
-        "published_at": "2019-05-15T18:30:43.580Z",
-        "tag_list": [
-            "applicationsecurity",
-            "tutorial",
-            "beginners",
-            "security"
-        ],
-        "slug": "pushing-left-like-a-boss-part-5-2-use-safe-dependencies-d6d",
-        "path": "/azure/pushing-left-like-a-boss-part-5-2-use-safe-dependencies-d6d",
-        "url": "https://dev.to/azure/pushing-left-like-a-boss-part-5-2-use-safe-dependencies-d6d",
-        "canonical_url": "https://dev.to/azure/pushing-left-like-a-boss-part-5-2-use-safe-dependencies-d6d",
-        "comments_count": 2,
-        "positive_reactions_count": 11,
-        "published_timestamp": "2019-05-15T18:30:43Z",
-        "user": {
-            "name": "Tanya Janca",
-            "username": "shehackspurple",
-            "twitter_username": "shehackspurple",
+            "name": "Andreas Wittig",
+            "username": "andreaswittig",
+            "twitter_username": "andreaswittig",
             "github_username": null,
-            "website_url": null,
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s---2wkSCxF--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/145347/09c24057-5475-404d-b7ce-e9fe55900199.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--d3p5ahhR--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/145347/09c24057-5475-404d-b7ce-e9fe55900199.jpg"
-        },
-        "organization": {
-            "name": "Microsoft Azure",
-            "username": "azure",
-            "slug": "azure",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--W1sXC6kT--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/512/64ce0b82-730d-4ca0-8359-2c21513a0063.jpg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--ky6F658R--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/organization/profile_image/512/64ce0b82-730d-4ca0-8359-2c21513a0063.jpg"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108856,
-        "title": "Scraping Recipes with Nokogiri",
-        "description": "An introduction to scraping with Nokogiri.",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--Uaug3r7U--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://proxy.duckduckgo.com/iu/%3Fu%3Dhttp%253A%252F%252F2.bp.blogspot.com%252F-R4ZtwSbrFuE%252FUDEPFN_ZyQI%252FAAAAAAAAB3c%252FoPxZSB6RueM%252Fs1600%252FWood-work-cake2.jpg%26f%3D1",
-        "published_at": "2019-05-15T19:34:58.034Z",
-        "tag_list": [
-            "ruby",
-            "rails",
-            "javascript",
-            "scraping"
-        ],
-        "slug": "scraping-recipes-with-nokogiri-29ih",
-        "path": "/256hz/scraping-recipes-with-nokogiri-29ih",
-        "url": "https://dev.to/256hz/scraping-recipes-with-nokogiri-29ih",
-        "canonical_url": "https://dev.to/256hz/scraping-recipes-with-nokogiri-29ih",
-        "comments_count": 0,
-        "positive_reactions_count": 17,
-        "published_timestamp": "2019-05-15T19:34:58Z",
-        "user": {
-            "name": "Abe Dolinger",
-            "username": "256hz",
-            "twitter_username": null,
-            "github_username": "256hz",
-            "website_url": "http://github.com/256hz",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--tfCep4VW--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/153329/b0b29a4f-d004-4560-9dbf-9ac582d42e00.jpeg",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--agEnL-SB--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/153329/b0b29a4f-d004-4560-9dbf-9ac582d42e00.jpeg"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108543,
-        "title": "A Simple(ish) Application of Javascript Generators in React w/ Redux",
-        "description": "An example of using a generator function in a React/Redux application. The purpose of the generator is to iterate through an array of VideoPlayer components that are rendered one at a time.",
-        "cover_image": null,
-        "published_at": "2019-05-15T20:57:00.834Z",
-        "tag_list": [
-            "react",
-            "redux",
-            "javascript",
-            "es6"
-        ],
-        "slug": "a-simple-ish-application-of-javascript-generators-in-react-w-redux-l53",
-        "path": "/hliutongco/a-simple-ish-application-of-javascript-generators-in-react-w-redux-l53",
-        "url": "https://dev.to/hliutongco/a-simple-ish-application-of-javascript-generators-in-react-w-redux-l53",
-        "canonical_url": "https://dev.to/hliutongco/a-simple-ish-application-of-javascript-generators-in-react-w-redux-l53",
-        "comments_count": 0,
-        "positive_reactions_count": 9,
-        "published_timestamp": "2019-05-15T20:57:00Z",
-        "user": {
-            "name": "Helen Liutongco",
-            "username": "hliutongco",
-            "twitter_username": null,
-            "github_username": "hliutongco",
-            "website_url": null,
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--in_8JIsB--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/142551/0abcdcc7-b1d4-48fc-9c54-0cfaf2dc28a9.png",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--8w73G54S--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/142551/0abcdcc7-b1d4-48fc-9c54-0cfaf2dc28a9.png"
-        }
-    },
-    {
-        "type_of": "article",
-        "id": 108795,
-        "title": "Iron Man... using HTML and CSS?",
-        "description": "I decided to create Iron Man using HTML and CSS only. This is my story.",
-        "cover_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--JNFd_9Su--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/b0qvuonaukyvsiwkz3bl.png",
-        "published_at": "2019-05-15T12:17:02.649Z",
-        "tag_list": [
-            "webdev",
-            "css",
-            "html",
-            "opensource"
-        ],
-        "slug": "iron-man-using-html-and-css-35ff",
-        "path": "/parkroolucas/iron-man-using-html-and-css-35ff",
-        "url": "https://dev.to/parkroolucas/iron-man-using-html-and-css-35ff",
-        "canonical_url": "https://dev.to/parkroolucas/iron-man-using-html-and-css-35ff",
-        "comments_count": 5,
-        "positive_reactions_count": 34,
-        "published_timestamp": "2019-05-15T12:17:02Z",
-        "user": {
-            "name": "Lucas Chen",
-            "username": "parkroolucas",
-            "twitter_username": null,
-            "github_username": "parkroolucas",
-            "website_url": "https://codebetter.com.au",
-            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--bYgcZepa--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/32735/394e74f9-2aa5-49dd-bd3a-bc414020691a.png",
-            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--yA_TE158--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/32735/394e74f9-2aa5-49dd-bd3a-bc414020691a.png"
+            "website_url": "https://cloudonaut.io",
+            "profile_image": "https://res.cloudinary.com/practicaldev/image/fetch/s--wbIShW8v--/c_fill,f_auto,fl_progressive,h_640,q_auto,w_640/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/167827/5a01a4d0-aea0-4d51-b1fd-eccd0f24b4cb.jpg",
+            "profile_image_90": "https://res.cloudinary.com/practicaldev/image/fetch/s--98y9jRiM--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://thepracticaldev.s3.amazonaws.com/uploads/user/profile_image/167827/5a01a4d0-aea0-4d51-b1fd-eccd0f24b4cb.jpg"
         }
     }
 ]
