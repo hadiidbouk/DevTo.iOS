@@ -30,3 +30,33 @@ class FeedViewModel {
         self.articles = Observable.just(articles)
     }
 }
+
+//MARK: - ArticleDto
+extension FeedViewModel {
+    
+    func transform(article: Article) -> ArticleDto {
+        
+        let title = article.title
+        let reactions = "\(article.positiveReactionsCount)"
+        let comments = "\(article.commentsCount)"
+        let tags = article.tagList.map { "#\($0)" }.joined(separator: " ")
+        
+        let name = article.user.name
+        let format = DateFormatter()
+        format.dateFormat = "MMMM dd"
+        let formattedDate = format.string(from: article.publishedTimestamp)
+        let nameAndDate = "\(name)・\(formattedDate)"
+        
+        let timeAgo = article.publishedTimestamp.getDayIntervalTimeAgo() ?? ""
+        
+        let profileImageUrl = URL(string: article.user.profileImage90Url)
+        
+        return ArticleDto(userProfilePictureUrl: profileImageUrl!,
+                          title: title,
+                          nameAndDate: nameAndDate,
+                          timeAgo: timeAgo,
+                          tags: tags,
+                          reactions: reactions,
+                          comments: comments)
+    }
+}

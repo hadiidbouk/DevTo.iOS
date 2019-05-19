@@ -33,25 +33,25 @@ class FeedTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func bindViews(article: Article) {
+    func bindViews(dto: ArticleDto) {
         
         // title
-        titleLbl.text = article.title
+        titleLbl.text = dto.title
         
         // reactions
         reactionsStackView.arrangedSubviews.forEach { view in
             
             if let label = view as? UILabel {
-                if article.positiveReactionsCount == 0 {
+                if dto.reactions == "0" {
                     label.isHidden = true
                 } else {
-                    label.text = "\(article.positiveReactionsCount)"
+                    label.text = "\(dto.reactions)"
                     label.isHidden = false
                 }
             }
             
             if let imageView = view as? UIImageView {
-                if article.positiveReactionsCount == 0 {
+                if dto.reactions == "0" {
                     imageView.isHidden = true
                 } else {
                     imageView.isHidden = false
@@ -63,16 +63,16 @@ class FeedTableViewCell: UITableViewCell {
         commentsStackView.arrangedSubviews.forEach { view in
             if let label = view as? UILabel {
                 
-                if article.commentsCount == 0 {
+                if dto.comments == "0" {
                     label.isHidden = true
                 } else {
-                    label.text = "\(article.commentsCount)"
+                    label.text = "\(dto.comments)"
                     label.isHidden = false
                 }
             }
             
             if let imageView = view as? UIImageView {
-                if article.commentsCount == 0 {
+                if dto.comments == "0" {
                     imageView.isHidden = true
                 } else {
                     imageView.isHidden = false
@@ -81,39 +81,25 @@ class FeedTableViewCell: UITableViewCell {
         }
         
         // tags
-        let tags = article.tagList.map { "#\($0)" }.joined(separator: " ")
-        tagListLbl.text = tags
+        tagListLbl.text = dto.tags
         
         // name and date
-        let name = article.user.name
-        let format = DateFormatter()
-        format.dateFormat = "MMMM dd"
-        let formattedDate = format.string(from: article.publishedTimestamp)
-        let nameAndDate = "\(name)・\(formattedDate)"
-        nameAndDateLbl.text = nameAndDate
+        nameAndDateLbl.text = dto.nameAndDate
         
         // time Ago
-        if let timeAgoText = article.publishedTimestamp.getDayIntervalTimeAgo() {
-            timeAgoLbl.isHidden = false
-            timeAgoLbl.text = "(\(timeAgoText))"
-        } else {
-            timeAgoLbl.isHidden = true
-        }
+        timeAgoLbl.text = dto.timeAgo
         
         // userImageView
-        if let profileImageUrl = URL(string: article.user.profileImage90Url) {
-            
-            userImageView.kf.setImage(with: profileImageUrl, options: [
+        userImageView.kf.setImage(with: dto.userProfilePictureUrl, options: [
                 .scaleFactor(UIScreen.main.scale),
                 .transition(.fade(0.3)),
                 .cacheOriginalImage
-                ])
-        }
+        ])
 
         //In order to fix dynamic cell heights only correct after some scrolling
         layoutIfNeeded()
         
-        self.updateImageAndTitleStackViewAligment(text: article.title)
+        self.updateImageAndTitleStackViewAligment(text: dto.title)
         
         selectionStyle = .none
     }

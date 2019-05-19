@@ -84,11 +84,13 @@ extension FeedViewController {
         feedTableView
             .rx
             .setDelegate(self)
-            .addDisposableTo(disposeBag)
+            .disposed(by: disposeBag)
 
         viewModel.articles
-            .bind(to: feedTableView.rx.items(cellIdentifier: FeedTableViewCell.className, cellType: FeedTableViewCell.self)) { (row, element, cell) in
-                cell.bindViews(article: element)
+            .bind(to: feedTableView.rx.items(cellIdentifier: FeedTableViewCell.className, cellType: FeedTableViewCell.self)) { [weak self] (row, element, cell) in
+                guard let strongSelf = self else { return }
+                let dto = strongSelf.viewModel.transform(article: element)
+                cell.bindViews(dto: dto)
             }
             .disposed(by: disposeBag)
     }
