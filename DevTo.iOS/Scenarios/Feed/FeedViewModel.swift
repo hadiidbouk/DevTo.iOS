@@ -47,14 +47,18 @@ extension FeedViewModel {
         let formattedDate = format.string(from: article.publishedTimestamp)
         let nameAndDate = "\(name)・\(formattedDate)"
         
-        let timeAgo = article.publishedTimestamp.getDayIntervalTimeAgo() ?? ""
+        var timeAgoString = ""
         
+        if let timeAgo =  article.publishedTimestamp.getDayIntervalTimeAgo(){
+            timeAgoString = "(\(timeAgo))"
+        }
+       
         let profileImageUrl = URL(string: article.user.profileImage90Url)
         
         return ArticleDto(userProfilePictureUrl: profileImageUrl!,
                           title: title,
                           nameAndDate: nameAndDate,
-                          timeAgo: timeAgo,
+                          timeAgo: timeAgoString,
                           tags: tags,
                           reactions: reactions,
                           comments: comments)
