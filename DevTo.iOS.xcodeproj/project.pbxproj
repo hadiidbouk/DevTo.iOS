@@ -41,6 +41,8 @@
 		315F1AFB22919FF300B4A988 /* UINavigationController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AFA22919FF300B4A988 /* UINavigationController+Extensions.swift */; };
 		315F1AFE2291A5DF00B4A988 /* ArticleDetailsBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AFD2291A5DF00B4A988 /* ArticleDetailsBottomView.swift */; };
 		315F1B002291AD1700B4A988 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1AFF2291AD1700B4A988 /* UIImage+Extensions.swift */; };
+		315F1B042291B15800B4A988 /* articleDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 315F1B032291B15800B4A988 /* articleDetails.json */; };
+		315F1B072291B1BF00B4A988 /* ArticleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F1B062291B1BF00B4A988 /* ArticleDetails.swift */; };
 		BDD7229EEA05E3D6A5A0CB5C /* Pods_DevTo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2598C52E35F7B759959CED35 /* Pods_DevTo_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +95,8 @@
 		315F1AFA22919FF300B4A988 /* UINavigationController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extensions.swift"; sourceTree = "<group>"; };
 		315F1AFD2291A5DF00B4A988 /* ArticleDetailsBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetailsBottomView.swift; sourceTree = "<group>"; };
 		315F1AFF2291AD1700B4A988 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		315F1B032291B15800B4A988 /* articleDetails.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = articleDetails.json; sourceTree = "<group>"; };
+		315F1B062291B1BF00B4A988 /* ArticleDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetails.swift; sourceTree = "<group>"; };
 		BB1D32F40475879B2FA7E572 /* Pods-DevTo.iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTo.iOS.release.xcconfig"; path = "Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS.release.xcconfig"; sourceTree = "<group>"; };
 		C2BB02589E061581FDBF5C06 /* Pods-DevTo.iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DevTo.iOS.debug.xcconfig"; path = "Target Support Files/Pods-DevTo.iOS/Pods-DevTo.iOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,9 +154,9 @@
 		31376746228AA30E00F46C7A /* Scenarios */ = {
 			isa = PBXGroup;
 			children = (
+				315F1B082291B70500B4A988 /* Generic */,
 				315F1AEF22918D9200B4A988 /* ArticleDetails */,
 				31376747228AA32A00F46C7A /* Feed */,
-				315F1AF422918F2500B4A988 /* BaseViewController.swift */,
 			);
 			path = Scenarios;
 			sourceTree = "<group>";
@@ -202,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				3137674E228AA4EF00F46C7A /* Coordinator.swift */,
+				315F1AF422918F2500B4A988 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -253,7 +258,6 @@
 			children = (
 				31376774228C226000F46C7A /* FeedType.swift */,
 				31376776228E9E5D00F46C7A /* Article.swift */,
-				31376778228E9F6F00F46C7A /* User.swift */,
 				3137677A228E9FEE00F46C7A /* Organization.swift */,
 				3137677E228EA14300F46C7A /* FlareTag.swift */,
 				315F1AED2291537100B4A988 /* ArticleDto.swift */,
@@ -275,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				3137678F228EABEF00F46C7A /* articles.json */,
+				315F1B032291B15800B4A988 /* articleDetails.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 		315F1AEF22918D9200B4A988 /* ArticleDetails */ = {
 			isa = PBXGroup;
 			children = (
+				315F1B052291B19700B4A988 /* Models */,
 				315F1AFC2291A50300B4A988 /* Views */,
 				315F1AF022918DDB00B4A988 /* ArticleDetailsViewController.swift */,
 				315F1AF6229191A900B4A988 /* ArticleDetailsCoordinator.swift */,
@@ -311,6 +317,30 @@
 				315F1AFD2291A5DF00B4A988 /* ArticleDetailsBottomView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		315F1B052291B19700B4A988 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				315F1B062291B1BF00B4A988 /* ArticleDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		315F1B082291B70500B4A988 /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				315F1B092291B71600B4A988 /* Models */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		315F1B092291B71600B4A988 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				31376778228E9F6F00F46C7A /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		84F2C6A752B3669B808E4D9B /* Pods */ = {
@@ -423,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31376790228EABEF00F46C7A /* articles.json in Resources */,
+				315F1B042291B15800B4A988 /* articleDetails.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +517,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				315F1B072291B1BF00B4A988 /* ArticleDetails.swift in Sources */,
 				315F1AF7229191A900B4A988 /* ArticleDetailsCoordinator.swift in Sources */,
 				31376758228AABB500F46C7A /* UIView+Extensions.swift in Sources */,
 				315F1AEC2291517300B4A988 /* UITableViewCell+Extensions.swift in Sources */,
