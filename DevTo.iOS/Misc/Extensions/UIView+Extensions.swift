@@ -110,6 +110,12 @@ extension UIView {
         self.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: constant).isActive = true
     }
     
+    func widthConstraint(sameAs view: UIView) {
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+    }
+    
     //MARK: - Center Constraints
     func centerToParentHorizontal() {
         
