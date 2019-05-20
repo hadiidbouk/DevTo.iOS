@@ -68,6 +68,11 @@ extension UIView {
         self.leadingAnchor.constraint(equalTo: parentView.leadingAnchor, constant: constant).isActive = true
     }
     
+    func aspectRatioConstraint(multiplier: CGFloat) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: multiplier).isActive = true
+    }
+    
     //MARK: Constraints Depending on view
     func topConstaint(view: UIView, constant: CGFloat) {
         
