@@ -73,6 +73,12 @@ extension UIView {
         self.heightAnchor.constraint(equalTo: self.widthAnchor, multiplier: multiplier).isActive = true
     }
     
+    func widthConstraint(greaterThanOrEqualToConstant constant: CGFloat) {
+        
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.widthAnchor.constraint(greaterThanOrEqualToConstant: constant).isActive = true
+    }
+    
     //MARK: Constraints Depending on view
     func topConstaint(view: UIView, constant: CGFloat) {
         
