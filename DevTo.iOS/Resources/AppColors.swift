@@ -38,7 +38,7 @@ struct AppColors {
         return UIColor(hex: "#EDEEF0")
     }()
     
-    static var articleDetailsBottomViewActionText: UIColor? = {
+    static var grayTextColor: UIColor? = {
         return UIColor(hex: "#666666")
     }()
 }

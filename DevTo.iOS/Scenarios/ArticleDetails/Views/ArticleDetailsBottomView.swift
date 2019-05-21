@@ -65,7 +65,7 @@ extension ArticleDetailsBottomView {
         dotsImageView = UIImageView()
         dotsImageView.image = #imageLiteral(resourceName: "threeDots").withRenderingMode(.alwaysTemplate)
         dotsImageView.contentMode = .scaleAspectFit
-        dotsImageView.tintColor = AppColors.articleDetailsBottomViewActionText
+        dotsImageView.tintColor = AppColors.grayTextColor
         
         contentView.addSubview(dotsImageView)
         dotsImageView.apply {
@@ -122,7 +122,7 @@ extension ArticleDetailsBottomView {
         let textLbl = UILabel()
         textLbl.text = text
         textLbl.font = UIFont.boldSystemFont(ofSize: 15)
-        textLbl.textColor = AppColors.articleDetailsBottomViewActionText
+        textLbl.textColor = AppColors.grayTextColor
         
         imageAndTextStackView.addArrangedSubview(textLbl)
         
